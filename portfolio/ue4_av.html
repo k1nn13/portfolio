@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!---->
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+      <title>Phil's Portfolio</title>
+
+      <!--CSS-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <link rel="stylesheet" href="../style.css">
+
+      <!-- Select-Google-Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,900;1,400&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+    </head>
+
+    <!---->
+    <body>
+        <header>
+
+          <!-- Logo-Image -->
+          <div class="logo">
+              <img src="../img/cube.png" alt="Logo">
+          </div>
+
+
+          <div class="navbar">
+            <a href="../index.html#work">Home</a>
+          </div>
+
+        </header>
+
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+              <strong>Audio-Visual</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--portfolio">Live Audio-Visual Performance</p>
+            <img class="intro__img__portfolio1" src="../img/UE_Logo.png" alt="profile image">
+        </section>
+
+        <div class="portfolio-item ">
+
+          <div class="about-me__body">
+          <p>Using UE4 I developed a custom live audio visual performance tool exploring audio reactive generative design and shaders.
+             During the research phase of this project I experimented with different frameworks and libraries including MAX for Live, Super Collider and openFrameworks.
+             Experimenting with UE4 inspired me and I enjoyed the challange of learning and developing in a new enviroment.
+             As UE4 had not been taught during the course I took it on myself to learn how to use and create a project in the engine.
+             One major skill I have learnt is to transfer understanding of programming knowledge to different languages.
+             The Demo features original audio written and performed using Ableton Live.</p>
+          </div>
+          <!-- <img src="img/ue4_demo2.png" alt=""> -->
+          <div class="portfolio-item-video">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2k6hsvVGbRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="about-me__body">
+            <p>This project showcases many of my skills focusing on generative design, understanding event driven logic and implementing communication between devices.</p>
+            <p>Key features of the project include: </p>
+            <ul>
+              <li>Live audio analysis and smoothing in UE4.</li>
+              <li>Recieve and process OSC data from Ableton Live to UE4.</li>
+              <li>Generative Design with audio interaction.</li>
+              <li>Niagara Particle System with audio interaction.</li>
+              <li>Reactive HLSL custom shaders (.usf) exploring ray marching.</li>
+            </ul>
+          </div>
+
+          <div class="portfolio-item-pdf">
+            <iframe src="../media/CP_FinalReport.pdf" width="100%" height="100%"></iframe>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+          <!-- Email Address -->
+          <a href="mailto:pkins001@gold.ac.uk" class="footer__link">pkins001@gold.ac.uk</a>
+          <ul class="social-list">
+
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://github.com/k1nn13" target="_blank">
+                <i class="fas fa-code"></i>
+              </a>
+            </li>
+
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://soundcloud.com/daygunmusic" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://soundcloud.com/daygunmusic" target="_blank">
+                <i class="fab fa-soundcloud"></i>
+              </a>
+            </li>
+
+            <!-- <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li> -->
+          </ul>
+
+        </footer>
+
+    </body>
+</html>
