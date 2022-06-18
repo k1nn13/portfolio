@@ -60,7 +60,7 @@ let canvas;
 //--------------------------------------------------------
 function setup() {
 
-  canvas = createCanvas(1080, 720);
+  canvas = createCanvas(windowWidth, 600);
   canvas.parent("sketch-container-posenet");
   // load the webcam, use the cameraReady() callback
   video = createCapture(VIDEO, cameraReady);
@@ -97,9 +97,9 @@ function setup() {
   e2 = new Emitter(width - 20, 20);
 
   speedSlider = createSlider(0.1, 10, 0.4, 0.1);
-  speedSlider.position(10, height + 200);
+  speedSlider.position(10, height*1.2);
   forceSlider = createSlider(0.1, 5, 1, 0.01)
-  forceSlider.position(200, height + 200);
+  forceSlider.position(200, height*1.2);
 }
 
 //---------------------DRAW-------------------------------

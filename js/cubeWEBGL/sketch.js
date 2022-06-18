@@ -71,7 +71,7 @@ function preload() {
 
 function windowResized()
 {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth*.8, windowHeight*.6);
 }
 
 //---------------//
@@ -81,7 +81,7 @@ function windowResized()
 function setup() {
 
   //create canvas in 3D
-  canvas = createCanvas(1024, 600, WEBGL);
+  canvas = createCanvas(800, 600, WEBGL);
   canvas.parent("sketch-container-cubeWEBGL");
 
   //---------AUDIO SETUP---------//

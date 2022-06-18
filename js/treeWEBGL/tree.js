@@ -18,11 +18,11 @@ function preload() {
 
 function windowResized()
 {
-  resizeCanvas(720, 300);
+  resizeCanvas(windowWidth*.8, windowHeight*.3);
 }
 
 function setup() {
-  canvas = createCanvas(720, 300, WEBGL);
+  canvas = createCanvas(600, 300, WEBGL);
   canvas.parent("sketch-container");
 
   //audio input
