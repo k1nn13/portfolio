@@ -15,74 +15,96 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,900;1,400&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
-
     </head>
 
     <!---->
-    <body>
+    <body class="portfolio-body">
+
+        <!--------------------------------------->
         <header>
-
-          <!-- Logo-Image -->
-          <div class="logo">
-              <img src="../img/cube.png" alt="Logo">
-          </div>
-
-
           <div class="navbar">
             <a href="../index.html#work">Home</a>
           </div>
-
         </header>
 
+        <!--------------------------------------->
+        <div class="margin-portfolio">
+          <div class="roundedSquareIndex">
 
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-              <strong>Audio-Visual</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--portfolio">Live Audio-Visual Performance</p>
-            <img class="intro__img__portfolio1" src="../img/UE_Logo.png" alt="profile image">
-        </section>
+            <!--------------------------------------->
+            <!-- Introduction -->
+            <section class="intro" id="home">
+                <!-- Portfolio Title -->
+                <h1 class="section__title--portfolio">
+                  <strong>Audio-Visual</strong>
+                </h1>
+                <!-- Portfolio Subtitle -->
+                <p class="section__subtitle--portfolio">Live Audio-Visual Performance</p>
+                <img class="intro__img__portfolio1" src="../img/UE_Logo.png" alt="profile image">
+            </section>
 
-        <div class="portfolio-item ">
+            <!--------------------------------------->
+            <div class="portfolio-item ">
+              <p class="section__subtitle-heading">Unreal Engine</p>
 
-          <div class="about-me__body">
-          <p>Using UE4 I developed a custom live audio visual performance tool exploring audio reactive generative design and shaders.
-             During the research phase of this project I experimented with different frameworks and libraries including MAX for Live, Super Collider and openFrameworks.
-             Experimenting with UE4 inspired me and I enjoyed the challange of learning and developing in a new enviroment.
-             As UE4 had not been taught during the course I took it on myself to learn how to use and create a project in the engine.
-             One major skill I have learnt is to transfer understanding of programming knowledge to different languages.
-             The Demo features original audio written and performed using Ableton Live.</p>
-          </div>
-          <br>
-          <!-- <img src="img/ue4_demo2.png" alt=""> -->
-          <div class="portfolio-item-video">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2k6hsvVGbRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+              <!-- divider -->
+              <div class="divider-portfolio">
+                <hr class="rounded">
+              </div>
 
-          <div class="about-me__body">
-            <p>This project showcases many of my skills focusing on generative design, understanding event driven logic and implementing communication between devices.</p>
-            <p>Key features of the project include: </p>
-            <ul>
-              <li>Live audio analysis and smoothing in UE4.</li>
-              <li>Recieve and process OSC data from Ableton Live to UE4.</li>
-              <li>Generative Design with audio interaction.</li>
-              <li>Niagara Particle System with audio interaction.</li>
-              <li>Reactive HLSL custom shaders (.usf) exploring ray marching.</li>
-            </ul>
-          </div>
+              <div class="about-me__portfolio-body">
+                <h2 class="section__subtitle--heading">Design:</h2>
+                <p>Using UE4 I developed a custom live audio visual performance tool exploring audio reactive generative design and shaders.
+                   During the research phase of this project I experimented with different frameworks and libraries including MAX for Live, Super Collider and openFrameworks.
+                </p>
+              </div>
 
-          <div class="portfolio-item-pdf">
-            <iframe src="../media/CP_FinalReport.pdf" width="100%" height="100%"></iframe>
+              <!-- divider -->
+              <div class="divider-portfolio">
+                <hr class="rounded">
+              </div>
+
+              <div class="videoBorder">
+                <div class="auto-resizable-iframe">
+                  <div>
+                    <iframe src="https://www.youtube.com/embed/2k6hsvVGbRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+
+              <!-- divider -->
+              <div class="divider-portfolio">
+                <hr class="rounded">
+              </div>
+
+                <p class="section__subtitle-heading">Key Features</p>
+
+                <div class="about-me__portfolio-list">
+
+                  <ul>
+                    <li>Live audio analysis and smoothing in UE4.</li>
+                    <li>Recieve and process OSC data from Ableton Live to UE4.</li>
+                    <li>Generative Design with audio interaction.</li>
+                    <li>Niagara Particle System with audio interaction.</li>
+                    <li>Reactive HLSL custom shaders (.usf) exploring ray marching.</li>
+                  </ul>
+
+                </div>
+
+            </div>
+
           </div>
         </div>
 
         <!-- Footer -->
         <footer class="footer">
-
-          <!-- Email Address -->
-          <a href="mailto:pkins001@gold.ac.uk" class="footer__link">pkins001@gold.ac.uk</a>
           <ul class="social-list">
+
+            <li class="social-list__item">
+              <a class="social-list__link" a href="mailto:pkins001@gold.ac.uk" target="_blank">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
 
             <li class="social-list__item">
               <a class="social-list__link" href="https://github.com/k1nn13" target="_blank">
@@ -101,14 +123,7 @@
                 <i class="fab fa-soundcloud"></i>
               </a>
             </li>
-
-            <!-- <li class="social-list__item">
-              <a class="social-list__link" href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li> -->
           </ul>
-
         </footer>
 
     </body>

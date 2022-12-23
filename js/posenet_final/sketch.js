@@ -88,7 +88,7 @@ let canavas;
 //--------------------------------------------------------
 function setup() {
 
-  canvas = createCanvas(1024, 720);
+  canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent("sketch-container-posenetFinal");
 
 

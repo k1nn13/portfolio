@@ -18,49 +18,78 @@
 
     </head>
 
-    <!---->
-    <body>
+    <!------------------------------------------------------------------>
+    <body class="portfolio-body-portfolio">
+
+        <!--------------------------------------->
         <header>
-
-          <!-- Logo-Image -->
-          <div class="logo">
-              <img src="../img/cube.png" alt="Logo">
-          </div>
-
-
+          <!-- Navigation -->
           <div class="navbar">
             <a href="../index.html#work">Home</a>
           </div>
-
         </header>
 
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-              <strong>GLSL Shaders</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--portfolio">Digital Image Manipulation</p>
-            <img class="intro__img__portfolio6" src="../img/opengl.png" alt="profile image">
-        </section>
+        <!--------------------------------------->
+        <div class="margin-portfolio">
+          <div class="roundedSquareIndex">
 
-        <div class="portfolio-item">
-          <div class="about-me__body">
-          <p>Using OpenGL to create fragment and vertex shaders which combine live video and photographs I created a number of visual FX.
-            The demo video includes various clips from the program edited to an original soundtrack.</p>
-          <!-- <img src="img/ue4_demo2.png" alt=""> -->
-          <div class="portfolio-item-video">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/X1BrGl7q1q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+            <!------------------------------------------------------------------>
+            <!-- Introduction -->
+            <section class="intro" id="home">
+                <h1 class="section__title--portfolio">
+                  <strong>GLSL Shaders</strong>
+                </h1>
+                <p class="section__subtitle--portfolio">Digital Image Manipulation</p>
+                <img class="intro__img__portfolio6" src="../img/opengl.png" alt="profile image">
+            </section>
 
+            <!------------------------------------------------------------------>
+            <div class="portfolio-item">
+              <p class="section__subtitle-heading">OpenGL</p>
+
+              <!-- divider -->
+              <div class="divider-portfolio">
+                <hr class="rounded">
+              </div>
+
+              <div class="about-me__portfolio-body">
+                <h2 class="section__subtitle--heading">Design:</h2>
+                <p>Using OpenGL to create fragment and vertex shaders which combine live video and photographs I created a number of visual FX.
+                  The demo video includes various clips from the program edited to an original soundtrack.
+                </p>
+
+              <!-- divider -->
+              <div class="divider-portfolio">
+                <hr class="rounded">
+              </div>
+
+              <!--------------------------------------->
+              <!-- Load Video -->
+              <div class="videoBorder">
+                <div class="auto-resizable-iframe">
+                  <div>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/X1BrGl7q1q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+           </div>
+         </div>
         </div>
-      </div>
+
+        <!------------------------------------------------------------------>
         <!-- Footer -->
         <footer class="footer">
 
-          <!-- Email Address -->
-          <a href="mailto:pkins001@gold.ac.uk" class="footer__link">pkins001@gold.ac.uk</a>
           <ul class="social-list">
-
+            <li class="social-list__item">
+              <a class="social-list__link" a href="mailto:pkins001@gold.ac.uk" target="_blank">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
             <li class="social-list__item">
               <a class="social-list__link" href="https://github.com/k1nn13" target="_blank">
                 <i class="fas fa-code"></i>
@@ -78,12 +107,6 @@
                 <i class="fab fa-soundcloud"></i>
               </a>
             </li>
-
-            <!-- <li class="social-list__item">
-              <a class="social-list__link" href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li> -->
           </ul>
 
         </footer>

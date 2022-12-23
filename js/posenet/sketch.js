@@ -60,7 +60,7 @@ let canvas;
 //--------------------------------------------------------
 function setup() {
 
-  canvas = createCanvas(windowWidth, 600);
+  canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent("sketch-container-posenet");
   // load the webcam, use the cameraReady() callback
   video = createCapture(VIDEO, cameraReady);

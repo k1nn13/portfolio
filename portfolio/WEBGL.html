@@ -19,82 +19,119 @@
       <script language="javascript" type="text/javascript" src="../js/libraries/p5.js"></script>
       <script language="javascript" type="text/javascript" src="../js/libraries/p5.sound.min.js"></script>
       <script language="javascript" type="text/javascript" src="../js/treeWEBGL/tree.js"></script>
-
     </head>
 
     <!-------------------------------------------------------------------------->
+    <body class="portfolio-body-portfolio">
 
-    <body>
-
-
+        <!---------------------------------------------------------------------->
         <header>
-          <!-- Logo-Image -->
-          <div class="logo">
-              <img src="../img/cube.png" alt="Logo">
-          </div>
-
           <!-- nav bar -->
           <div class="navbar">
             <a href="../index.html#work">Home</a>
           </div>
         </header>
 
-        <!---------------------------------------------------------------------->
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-              <strong>WebGL Design</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--portfolio">3D Design & Interaction</p>
-            <img class="intro__img__portfolio7" src="../img/WebGL-Logo.svg" alt="profile image">
-        </section>
+        <!--------------------------------------->
+        <div class="margin-portfolio">
+          <div class="roundedSquareIndex">
 
-        <!---------------------------------------------------------------------->
-        <div class="portfolio-item">
-          <div class="about-me__body">
+            <!---------------------------------------------------------------------->
+            <!-- Introduction -->
+            <section class="intro" id="home">
+                <!-- Title -->
+                <h1 class="section__title--portfolio">
+                  <strong>WebGL</strong>
+                </h1>
+                <!-- Subtitle -->
+                <p class="section__subtitle--portfolio">3D Design & Interaction</p>
+                <!-- Logo -->
+                <img class="intro__img__portfolio7" src="../img/WebGL-Logo.svg" alt="profile image">
+            </section>
 
+            <!---------------------------------------------------------------------->
+            <div class="portfolio-item">
+              <p class="section__subtitle-heading">WEBGL</p>
 
-            <p>During my time at Goldsmiths I have experimented with WebGL to create a number of interactive sketches
-            gaining confidence working in 3D space and combining technologies.</p>
+              <!-- divider -->
+              <div class="divider-portfolio">
+                <hr class="rounded">
+              </div>
 
-            <p>The sketch below demonstrates audio responsivness using a microphone to trigger lighting and animation. </p>
+              <div class="about-me__portfolio-body">
 
-            <div id="sketch-container"></div>
+                <!-- Title 1 -->
+                <h2 class="section__subtitle--heading">3D Design and Audio Interaction:</h2>
+                <p>The sketch below demonstrates audio responsivness using a microphone to trigger lighting and animation. </p>
 
-            <p class="section_subtitle_portfolio">Audio Visualisation</p>
-            <p>This audio visualisation explores perception and combines an original soundtrack with generative design and audio interaction.</p>
+                <div class="videoBorder">
+                  <div id="sketch-container"></div>
+                </div>
+                <!-- divider -->
+                <div class="divider-portfolio">
+                  <hr class="rounded">
+                </div>
 
-            <div class="webgl-container">
-              <img src="../img/webglCube.png" class="webgl-img">
+                <!---------------------------------------------------------------------->
+                <!-- Title 1 -->
+                <h2 class="section__subtitle--heading">Audio Visualisation</h2>
+                <p>This audio visualisation explores perception and combines an original soundtrack with generative design and audio interaction.</p>
+
+                <div class="videoBorder">
+                  <div class="webgl-container">
+                    <img src="../img/webglCube.png" class="webgl-img">
+                  </div>
+                </div>
+
+                <div class="demo-link">
+                  <a href="WEBGLcube.html">Continue to Demo</a>
+                </div>
+
+                <!-- divider -->
+                <div class="divider-portfolio">
+                  <hr class="rounded">
+                </div>
+
+                <!---------------------------------------------------------------------->
+                <!-- Title 1 -->
+                <h2 class="section__subtitle--heading">3D Face API</h2>
+                <p>Using ml5.js Face API I designed an interactive piece using WebGl and shaders.</p>
+
+                <div class="videoBorder">
+                  <div class="webgl-container">
+                    <img src="../img/faceAPI.png" class="webgl-img">
+                  </div>
+                </div>
+
+                <div class="demo-link">
+                  <a href="WEBGLfaceAPI.html">Continue to Demo</a>
+                </div>
+
+                <!-- divider -->
+                <div class="divider">
+                  <hr class="rounded">
+                </div>
+
+              </div>
             </div>
-
-            <div class="demo-link">
-              <a href="WEBGLcube.html">Continue to Audio Visual Demo</a>
-            </div>
-
-            <br>
-
-            <p class="section_subtitle_portfolio">3D Face API</p>
-            <p>Using ml5.js Face API I designed an interactive piece using WebGl and shaders.</p>
-            <div class="webgl-container">
-              <img src="../img/faceAPI.png" class="webgl-img">
-            </div>
-
-            <div class="demo-link">
-              <a href="WEBGLfaceAPI.html">Continue to Face API Demo</a>
-            </div>
-
+          </div>
         </div>
-      </div>
 
         <!---------------------------------------------------------------------->
         <!-- Footer -->
         <footer class="footer">
 
           <!-- Email Address -->
-          <a href="mailto:pkins001@gold.ac.uk" class="footer__link">pkins001@gold.ac.uk</a>
+          <!-- <a href="mailto:pkins001@gold.ac.uk" class="footer__link">pkins001@gold.ac.uk</a> -->
 
           <ul class="social-list">
+
+            <li class="social-list__item">
+              <a class="social-list__link" a href="mailto:pkins001@gold.ac.uk" target="_blank">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
+
             <li class="social-list__item">
               <a class="social-list__link" href="https://github.com/k1nn13" target="_blank">
                 <i class="fas fa-code"></i>
