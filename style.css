@@ -362,7 +362,21 @@ header {
   margin: 10% 1% 0 1%;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
+  /* main Margin */
+  .margin-main {
+    margin: 5% 8% 0 8%;
+  }
+
+  /* main Margin */
+  .margin-portfolio {
+    margin: 5% 8% 0 8%;
+  }
+}
+
+
+
+@media (min-width: 1200px) {
   /* main Margin */
   .margin-main {
     margin: 5% 20% 0 20%;
@@ -467,7 +481,7 @@ hr.rounded {
 .intro-index {
   position: relative;
   /* margin-bottom: 5%; */
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 
@@ -476,7 +490,7 @@ hr.rounded {
   display: none;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
 
   /* Navigation */
   .logo {
@@ -553,8 +567,8 @@ hr.rounded {
 /* Subtitle Margin */
 .section__subtitle-index {
   font-family: monospace;
-  font-weight: 900;
-  font-size: 2.25em;
+  font-weight: 300;
+  font-size: 1.5em;
   color: var(--clr-dark);
   padding: 0 2% 0 0;
   text-align: right;
@@ -567,6 +581,44 @@ hr.rounded {
 
   margin-left: 2%;
   margin-right: 2%;
+}
+
+/* Subtitle Margin */
+.section__subtitle-portfolio {
+  font-family: monospace;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: var(--clr-dark);
+  padding: 0 0 0 2%;
+  text-align: left;
+
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  border-width: thin;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/* Subtitle Margin */
+.section__subtitle-portfolio-main {
+  font-family: monospace;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: var(--clr-dark);
+  padding: 0 2% 0 0;
+  text-align: right;
+
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  border-width: thin;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .section__subtitle-heading {
@@ -673,7 +725,7 @@ hr.rounded {
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
 
   /* Portfolio Titles*/
   .section__title--portfolio {
@@ -840,9 +892,9 @@ hr.rounded {
 
 .my-work h2{
   font-family: monospace;
-  background: rgba(255, 255, 255, 0.4);
-  font-weight: bolder;
-  font-size: 2.25em;
+  background: rgba(255, 255, 255, 0.3);
+  font-weight: 600;
+  font-size: 1.5em;
   color: var(--clr-dark);
   text-align: left;
 
@@ -851,10 +903,11 @@ hr.rounded {
   border-color: rgba(0, 0, 0, 0.2);
   border-style: solid;
 
-  margin-top: 2%;
+
+  margin-top: 0;
   margin-left: 2%;
   margin-right: 2%;
-  padding: .7% 1% .7% 1%;
+  padding: 0% 1% 0% 1%;
 
 }
 
@@ -918,7 +971,7 @@ hr.rounded {
 .intro__img__portfolio1 {
   filter: invert(100%);
   position: absolute;
-  width: 20%;
+  width: 15%;
   right: 5%;
   top: 0%;
 }
@@ -958,7 +1011,7 @@ hr.rounded {
 /* OpenGL Logo */
 .intro__img__portfolio6 {
   position: absolute;
-  width: 30%;
+  width: 20%;
   right: 5%;
   top: -5%;
 }
@@ -971,7 +1024,7 @@ hr.rounded {
   top: 32%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
 
   .intro__img__portfolio1 {
     filter: invert(100%);
@@ -1022,10 +1075,11 @@ hr.rounded {
   /* OpenGL Logo */
   .intro__img__portfolio6 {
     grid-area: img;
-    min-width: 200px;
+    min-width: 120px;
     position: relative;
     z-index: 2;
-        top: 0;
+    top: 0;
+
   }
 
   /* WEBGL Logo */
