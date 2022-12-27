@@ -1,66 +1,25 @@
 /*------------------------------------------*/
+/*------------ Background Images -----------*/
 /*------------------------------------------*/
-/* Setup */
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Setup Custom Properties */
-:root {
-  --ff-primary: 'Source Sans Pro', sans-serif;
-  --ff-secondary: 'Source Code Pro', monospace;
-
-  --fw-reg: 300;
-  --fw-bold: 600;
-
-  --clr-light: rgba(233, 233, 233, 0.8);
-  --clr-dark: #303030;
-  --clr-accent: rgba(228, 228, 228, 0.8);
-  --clr-black: #000000;
-
-  --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
-  --fs-h3: 1.25rem;
-  --fs-body: 0.9rem;
-
-  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-        0.125em 0.125em 0.25em rgba(0,0,0,.15);
-}
-
-/* Media Query */
-@media (min-width: 800px) {
-  :root {
-    --fs-h1: 3.5rem;
-    --fs-h2: 3.75rem;
-    --fs-h3: 1.5rem;
-    --fs-body: 1.125rem;
-  }
-}
-
-/*------------------------------------------*/
-/*------------------------------------------*/
-/* Background */
 .index-body {
   position: relative;
-
 }
 
-/* Main Image */
+/* Main Image On Index*/
 .index-body::before {
     content: "";
     position: absolute;
   	width: 100%;
   	height: 110%;
-    background-image: url(../img/WaterSceneLarge2.jpg);
+    background-image: url(../img/backgroundIMG/WaterSceneLarge2.jpg);
     background-size: cover;
     background-position: top left;
     background-repeat: no-repeat;
     z-index: -1000;
 }
 
+/*------------------------------------------*/
+/*-------------UE4 Project-------------------*/
 /*------------------------------------------*/
 .portfolio-body {
   position: relative;
@@ -72,13 +31,11 @@
     position: absolute;
   	width: 100%;
   	height: 110%;
-    background-image: url(../img/portfolioBg.jpg);
+    background-image: url(../img/backgroundIMG/portfolioBg.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    /* filter: blur(1px) brightness(1) contrast(1); */
     z-index: -1000;
-    /* transform: scaleX(-1); */
 }
 
 /*------------------------------------------*/
@@ -92,11 +49,11 @@
     position: absolute;
   	width: 100%;
   	height: 110%;
-    background-image: url(../img/waterStyle.jpg);
+    background-image: url(../img/backgroundIMG/waterStyle.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    /* filter: blur(1px) brightness(1) contrast(1); */
+    filter: brightness(4);
     z-index: -1000;
     transform: scaleY(-1);
 }
@@ -112,7 +69,7 @@
     position: absolute;
   	width: 100%;
   	height: 110%;
-    background-image: url(../img/WaterSceneLarge.jpg);
+    background-image: url(../img/backgroundIMG/WaterSceneLarge.jpg);
     background-size: fit;
     background-position: top;
     background-repeat: repeat;
@@ -132,14 +89,12 @@
     position: absolute;
   	width: 100%;
   	height: 110%;
-    background-image: url(../img/WaterSceneLarge.jpg);
+    background-image: url(../img/backgroundIMG/WaterSceneLarge.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     filter: blur(8px) brightness(1) contrast(1) invert(0) opacity(0.5);
-/* filter: invert(100); */
     z-index: -1000;
-
 }
 
 /*------------------------------------------*/
@@ -153,7 +108,7 @@
     position: absolute;
   	width: 100%;
   	height: 110%;
-    background-image: url(../img/WaterSceneLarge2.jpg);
+    background-image: url(../img/backgroundIMG/WaterSceneLarge2.jpg);
 
     background-size: cover;
     background-position: top left;
@@ -174,14 +129,15 @@
     position: absolute;
   	width: 100%;
   	height: 110%;
-    background-image: url(../img/HoneyEd.jpg);
+    background-image: url(../img/backgroundIMG/HoneyEd.jpg);
 
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     filter: blur(1px) brightness(1);
     z-index: -1000;
-    /* transform: scaleX(-1); */
+
+        min-height: 150%;
 }
 
 /*------------------------------------------*/
@@ -195,7 +151,7 @@
     position: absolute;
   	width: 100%;
   	height: 110%;
-    background-image: url(../img/metalWorn.jpg);
+    background-image: url(../img/backgroundIMG/metalWorn.jpg);
 
     background-size: cover;
     background-position: center;
@@ -216,14 +172,12 @@
     position: absolute;
   	width: 100%;
   	height: 110%;
-    background-image: url(../img/rock.jpg);
-
+    background-image: url(../img/backgroundIMG/rock.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     filter: brightness(1.5);
     z-index: -1000;
-    /* transform: scaleX(-1); */
 }
 
 /*------------------------------------------*/
@@ -236,15 +190,15 @@
     content: "";
     position: absolute;
   	width: 100%;
-  	height: 110%;
-    background-image: url(../img/machineMetal.jpg);
-
+  	height: 140%;
+    background-image: url(../img/backgroundIMG/machineMetal.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     filter: brightness(1.5);
     z-index: -1000;
-    /* transform: scaleX(-1); */
+
+        min-height: 200%;
 }
 
 /*------------------------------------------*/
@@ -257,15 +211,16 @@
     content: "";
     position: absolute;
   	width: 100%;
-  	height: 110%;
-    background-image: url(../img/nCloth.jpg);
-
+  	height: 100%;
+    background-image: url(../img/backgroundIMG/nCloth.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     filter: brightness(1.2);
     z-index: -1000;
-    /* transform: scaleX(-1); */
+    transform: scaleY(-1);
+
+    min-height: 200%;
 }
 
 /*------------------------------------------*/
@@ -279,24 +234,78 @@
     position: absolute;
   	width: 100%;
   	height: 110%;
-    background-image: url(../img/portfolioPlain.jpg);
+    background-image: url(../img/backgroundIMG/portfolioPlain.jpg);
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     filter:brightness(1);
     z-index: -1000;
-    transform: scaleY(-1);
+    transform: scaleY(1);
+
+        min-height: 200%;
 }
+
+
+
+/*------------------------------------------*/
+/*------------------------------------------*/
+/* Setup */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Setup Custom Properties */
+:root {
+  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-secondary: 'Source Code Pro', monospace;
+
+  --fw-reg: 300;
+  --fw-bold: 600;
+
+  --clr-light: rgba(233, 233, 233, 0.7);
+  --clr-dark: #303030;
+  --clr-accent: rgba(228, 228, 228, 0.6);
+  --clr-black: #000000;
+
+  --fs-h1: 2rem;
+  --fs-h2: 1.25rem;
+  --fs-h3: 0.9rem;
+  --fs-p: 0.9rem;
+
+  --lh-h1: 2.2rem;
+  --lh-h2: 1rem;
+  --lh-h3: 1.4rem;
+  --lh-p: 1.5rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+        0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+/* Media Query */
+@media (min-width: 700px) {
+  :root {
+    --fs-h1: 3.5rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-p: 1.25rem;
+
+    --lh-h1: 3.5rem;
+    --lh-h2: 1rem;
+    --lh-h3: 1.75rem;
+    --lh-p: 2.25rem;
+  }
+}
+
+/* html, body {min-height: 100%;}
+body {background-size: cover;} */
 
 /*------------------------------------------*/
 body {
-  color: var(--clr-light);
-  /* margin: 0; */
-  font-family: var(--ff-primary);
-  /* font-size: var(--fs-body); */
-  line-height: 1.6;
-  text-align: justify;
+
 }
 
 img {
@@ -336,8 +345,9 @@ section {
 /* Typography */
 h1,
 h2,
-h3 {
-  line-height:1;
+h3,
+P {
+  line-height: 0;
   margin: 0;
   text-decoration: none;
 }
@@ -345,6 +355,7 @@ h3 {
 h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
+line-height { line-height: var(--lh-h2) }
 
 header {
   display: flex;
@@ -354,54 +365,62 @@ header {
 }
 
 
-/* Set Main Margin */
-.margin-portfolio {
-  margin: 10% 1% 0 1%;
-}
-.margin-main {
-  margin: 10% 1% 0 1%;
-}
 
-@media (min-width: 900px) {
-  /* main Margin */
-  .margin-main {
-    margin: 5% 8% 0 8%;
-  }
-
-  /* main Margin */
-  .margin-portfolio {
-    margin: 5% 8% 0 8%;
-  }
+/*------------------------------------------*/
+/*--------------- Navigation--------------- */
+/*------------------------------------------*/
+.nav-container {
+  margin-left: 2%;
+}
+/* The navigation bar */
+.navbar {
+  z-index: 99;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  border-bottom: 1px solid grey;
 }
 
+/* Links inside the navbar */
+.navbar a {
+  font-family: var(--ff-primary);
+  color: var(--clr-light);
 
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
 
-@media (min-width: 1200px) {
-  /* main Margin */
-  .margin-main {
-    margin: 5% 20% 0 20%;
-  }
+  padding: 14px 5px;
+  margin-left: 2%;
+}
 
-  /* main Margin */
-  .margin-portfolio {
-    margin: 5% 20% 0 20%;
-  }
+/* Change background on mouse-over */
+.navbar a:hover {
+    color: var(--clr-accent);
 }
 
 /*------------------------------------------*/
+/*--------- Rounded border Divider ---------*/
 /*------------------------------------------*/
-/* Rounded border Divider */
 hr.rounded {
   border-top: 1px solid #bbb;
   border-radius: 1px;
-  opacity: 0.2;
+  opacity: 0.08;
 }
 
 .divider {
   padding-top: 1px;
   padding-bottom: 1px;
-  /* width: 70%; */
+  width: 98%;
   margin: auto;
+}
+
+.divider-index-title {
+  width: 40%;
+  margin: 2%;
 }
 
 .divider-index {
@@ -419,506 +438,162 @@ hr.rounded {
 }
 
 
-.divider-index-title {
-  width: 40%;
-  margin: 2%;
-}
-
 /*------------------------------------------*/
+/*------- Set Main Margin and scales -------*/
 /*------------------------------------------*/
-/* Header */
-
-/* Navigation */
-.logo {
-  max-width: 18px;
-  z-index: 999;
-  position: fixed; /* Set the navbar to fixed position */
-  padding-top: 40px;
-  margin-left: 90%;
+.margin-portfolio {
+  margin: 10% 1% 0 1%;
 }
 
-.nav-container {
-  margin-left: 2%;
+.margin-main {
+  margin: 10% 1% 0 1%;
 }
 
-/* The navigation bar */
-.navbar {
-  z-index: 99;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  border-bottom: 1px solid grey;
+.margin-inner {
+  margin: 4% 5% 4% 5%;
 }
 
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 5px;
-  text-decoration: none;
-  margin-left: 2%;
-}
-
-/* Change background on mouse-over */
-.navbar a:hover {
-    color: var(--clr-accent);
-}
-
-/*------------------------------------------*/
-/*------------------------------------------*/
-/* Intro Section */
-
-.intro {
-  position: relative;
-  margin-left: 5%;
-  margin-top: 5%;
-}
-
-.intro-index {
-  position: relative;
-  /* margin-bottom: 5%; */
-  margin-top: 1%;
-}
-
-
-.intro__img {
-  visibility: hidden;
-  display: none;
-}
-
-@media (min-width: 1000px) {
-
-  /* Navigation */
-  .logo {
-    max-width: 25px;
-    z-index: 999;
-    position: fixed; /* Set the navbar to fixed position */
-    padding-top: 40px;
-    margin-left: 95%;
+@media (min-width: 900px) {
+  /* main Margin */
+  .margin-main {
+    margin: 5% 8% 0 8%;
   }
 
-  .intro {
-    display: grid;
-    width: min-content;
-    margin: 2% auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    grid-column-gap: 1em;
-    grid-template-areas:
-      "img title"
-      "img subtitle";
-    grid-template-columns: min-content max-content;
-    /* padding-top: 80px; */
+  /* main Margin */
+  .margin-portfolio {
+    margin: 5% 8% 0 8%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* main Margin */
+  .margin-main {
+    margin: 5% 20% 0 20%;
   }
 
-  .intro__img {
-    visibility: visible;
-    display: block;
-    grid-area: img;
-    min-width: 250px;
-    position: relative;
-    z-index: 2;
-  }
-
-  .section__subtitle--intro {
-    align-self: start;
-    grid-column: -1 / 1;
-    grid-row: 2;
-    text-align: right;
-    position: relative;
-    left: -1.5em;
-    width: calc(100% + 1.5em);
+  /* main Margin */
+  .margin-portfolio {
+    margin: 5% 20% 0 20%;
   }
 }
 
 /*------------------------------------------*/
+/*----- background Shape Border-------------*/
 /*------------------------------------------*/
-
-/* Titles */
-.section__title-index {
-  margin: 0% 0% 0% 2%;
-}
-
-.section__title--intro {
-  font-weight: var(--fw-reg);
-}
-
-.section__title--intro strong{
-  display: block;
-}
-
-/* Titles */
-.section__title {
-  margin: 0 0 2% 2%;
-}
-
-/*------------------------------------------*/
-
-/* Subtitle Margin */
-.section__subtitle {
-  margin: 0%;
-  font-size: var(--fs-h3);
-}
-
-/* Subtitle Margin */
-.section__subtitle-index {
-  font-family: monospace;
-  font-weight: 300;
-  font-size: 1.5em;
-  color: var(--clr-dark);
-  padding: 0 2% 0 0;
-  text-align: right;
-
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  border-width: thin;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-style: solid;
-
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-/* Subtitle Margin */
-.section__subtitle-portfolio {
-  font-family: monospace;
-  font-weight: 300;
-  font-size: 1.5em;
-  color: var(--clr-dark);
-  padding: 0 0 0 2%;
-  text-align: left;
-
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  border-width: thin;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-style: solid;
-
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-/* Subtitle Margin */
-.section__subtitle-portfolio-main {
-  font-family: monospace;
-  font-weight: 300;
-  font-size: 1.5em;
-  color: var(--clr-dark);
-  padding: 0 2% 0 0;
-  text-align: right;
-
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  border-width: thin;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-style: solid;
-
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.section__subtitle-heading {
-  font-family: monospace;;
-  font-weight: bold;
-  font-size: 2.25em;
-  color: var(--clr-black);
-  padding: 0 3% 0 0;
-  text-align: right;
-
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  border-width: thin;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-style: solid;
-
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.section__subtitle-about {
-  background: rgba(255, 255, 255, 0.7);
-  /* font-family: var(--ff-primary); */
-  color: var(--clr-dark);
-  font-weight: 300;
-  font-size: 1em;
-  padding: .25em 1em;
-  text-align: left;
-
-  border-radius: 10px;
-  border-width: thin;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-style: solid;
-}
-
-/* Highlited Tiles */
-.section__subtitle--intro,
-.section__subtitle--about {
-  margin-bottom: 2em;
-  padding: .25em 1em;
-}
-
-/* Portfolio Subtitle*/
-.section__title--portfolio {
-  font-weight: var(--fw-reg);
-}
-
-.section__subtitle--portfolio {
-  font-size: 1.5em;
-}
-
-.section_subtitle_portfolio{
-  color: yellow;
-  opacity: 0.7;
-  font-size: 1.5em;
-  padding-left: 2%;
-}
-
-/* Services Titles */
-.section__title--services {
-  color: #85b4ff;
-  opacity: .7;
-  position: relative;
-}
-
-.section__title--services::after {
-  content: '';
-  display: block;
-  width: 3em;
-  height: 1px;
-  margin: 0.2em auto 1em;
-  background: var(--clr-light);
-  opacity: 0.5;
-}
-
-.section__subtitle--work {
-  color: white;
-  font-weight: var(--fw-regular);
-  margin-bottom: 0.5em;
-}
-
-/* background shape */
-.roundedSquare {
-  border-radius: 20px;
-  border-width: thin;
-  border-color: rgba(221, 221, 221, 0.2);
-  border-style: solid;
-
-  background: rgba(0, 0, 0, .2);
-  padding: 5px 10px 5px 10px;
-  margin-top: 1%;
-  margin-bottom: 1%;
-}
-
-/* Portfolio Titles*/
-.section__title--portfolio {
-  font-weight: var(--fw-reg);
-}
-
-.section__subtitle--portfolio {
-  font-size: 1.5em;
-  margin-bottom: 2em;
-  margin: 0;
-}
-
-
-@media (min-width: 1000px) {
-
-  /* Portfolio Titles*/
-  .section__title--portfolio {
-    font-weight: var(--fw-reg);
-    padding: .0em 0.15em;
-    margin: 0
-  }
-
-  .section__subtitle--portfolio {
-    font-size: 1.5em;
-    margin-bottom: 2em;
-    padding: .0em 0.25em;
-    margin: 0;
-  }
-}
-
-/*------------------------------------------*/
-/*------------------------------------------*/
-/* About Me "what i do" */
-
-/* background shape */
-.roundedSquareIndex {
+.background-shape {
   border-radius: 10px;
   border-width: thin;
   border-color: rgba(221, 221, 221, 0.3);
   border-style: solid;
   background: rgba(0, 0, 0, .5);
   padding: 5px 10px 5px 10px;
-  margin-bottom: 10%;
-}
-
-/* background shape */
-.roundedSquareGame {
-  border-radius: 10px;
-  border-width: thin;
-  border-color: rgba(221, 221, 221, 0.3);
-  border-style: solid;
-  background: rgba(0, 0, 0, .2);
-  padding: 5px 10px 5px 10px;
   margin-bottom: 2%;
-  margin-top: 2%;
-}
-
-
-.about-me__img {
-  box-shadow: var(--bs);
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.section__title--about {
-  font-weight: bold;
-  margin: 5% 2% 1% 2%;
-  padding-left: 2%;
-  padding-right: 2%;
-  font-size: 2em;
-  color: var(--clr-accent);
-  opacity: .8;
-}
-
-.section__subtitle--heading {
-  font-weight: bold;
-  margin: 5% 2% 1% 2%;
-  padding-left: 3%;
-  padding-right: 2%;
-  font-size: 2em;
-  color: var(--clr-accent);
-  opacity: .6;
-}
-
-.section__title--projects {
-  font-weight: normal;
-  margin: 1% 2% 3% 2%;
-  padding-left: 2%;
-  padding-right: 2%;
-  font-size: 2em;
-  color: var(--clr-light);
-  opacity: .9;
-}
-
-.about-me__body p{
-  margin: 0% 2% 5% 2%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  font-weight: 600;
-  font-size: 1.25em;
-  opacity: 0.9;
-}
-
-.about-me__portfolio-body p{
-  margin: 0% 2% 5% 2%;
-  padding-left: 3.5%;
-  padding-right: 3.5%;
-  font-weight: 600;
-  font-size: 1.25em;
-  opacity: 0.89
-}
-
-.about-me__portfolio-list p{
-  margin: 0% 0% 0% 0%;
-  font-weight: 300;
-  font-size: 1em;
-}
-
-.about-me__portfolio-list ul{
-  font-weight: 600;
-  margin: 5% 0% 10% 2%;
-}
-
-.about-me__portfolio-list {
-
-}
-
-/*------------------------------------------*/
-/*------------------------------------------*/
-/* My Services "what i do" */
-
-.my-services {
-  color: var(--clr-light);
-  text-align: center;
-  margin: 2% 0 2% 0;
-}
-
-.services {
-  margin-bottom: 0em;
-}
-
-.service {
-  max-width: 500px;
-  margin: 40px auto;
-}
-
-.service h3{
-  color: var(--clr-light);
-  opacity: .7;
-}
-
-.service p{
-  padding-left: 10%;
-  padding-right: 10%;
-  font-weight: 600;
-}
-
-@media (min-width: 1100px) {
-  .services {
-    display: flex;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .service + .service {
-    margin-left: 0em;
-  }
-}
-
-/*------------------------------------------*/
-/*------------------------------------------*/
-/* My Work portfolio section*/
-
-.my-work {
-  text-align: center;
-}
-
-.my-work h2{
-  font-family: monospace;
-  background: rgba(255, 255, 255, 0.3);
-  font-weight: 600;
-  font-size: 1.5em;
-  color: var(--clr-dark);
-  text-align: left;
-
-  border-radius: 10px;
-  border-width: thin;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-style: solid;
-
-
-  margin-top: 0;
-  margin-left: 2%;
-  margin-right: 2%;
-  padding: 0% 1% 0% 1%;
-
 }
 
 /* background shape */
-.roundedSquareBlack {
+.background-shape-portfolio {
   border-radius: 10px;
   border-width: thin;
   border-color: rgba(221, 221, 221, 0.2);
   border-style: solid;
   background: rgba(0, 0, 0, 0.8);
-  margin: 2% 2% 2% 2%;
+}
+
+/*------------------------------------------*/
+/* ---------Intro and Main Titles ----------*/
+/*------------------------------------------*/
+.intro {
+  position: relative;
+  /* margin-bottom: 0%; */
+}
+
+.intro-title {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-reg);
+  color: var(--clr-accent);
+  line-height:  var(--lh-h1);
+  margin-bottom: 1%;
+}
+
+.intro-title strong{
+  display: block;
+    color: var(--clr-light);
+}
+
+/*------------------------------------------*/
+/*----------- Subtitle Style ---------------*/
+/*------------------------------------------*/
+.subtitle_align-right {
+  text-align: right;
+  padding: 0 2% 0 0;
+}
+
+.subtitle_align-left {
+  text-align: left;
+  padding: 0 0 0 2%;
+}
+
+/* Subtitle Text Style */
+.subtitle-style {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-reg);
+  color: var(--clr-accent);
+  line-height:  var(--lh-h3);
+}
+
+.subtitle-shape {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 6px;
+  border-width: thin;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+}
+
+/*------------------------------------------*/
+/*--------- Main Text Styling --------------*/
+/*------------------------------------------*/
+.text_body {
+  font-family: var(--ff-primary);
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding: 2%;
+}
+
+.text_body h2 {
+  font-size: var(--fs-h2);
+  color: var(--clr-accent);
+  line-height: var(--lh-h2);
+  margin-bottom: 2%;
+}
+
+.text_body p{
+  font-size: var(--fs-p);
+  font-weight: var(--fw-bold);
+  color: var(--clr-light);
+  line-height: var(--lh-p);
+  text-align: justify;
+}
+
+.text_body ul li {
+  font-size: var(--fs-p);
+  font-weight: var(--fw-bold);
+  color: var(--clr-light);
+  line-height: var(--lh-p);
+  margin: 0% 0% 2% 0%;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+  opacity: 0.89
+  list-style-type: circle;
+}
+
+/*------------------------------------------*/
+/*------ Portfolio Section Index layout ----*/
+/*------------------------------------------*/
+.portfolio-main {
+  margin-top: 1%;
+  margin-bottom: 5%;
+  text-align: center;
 }
 
 .portfolio {
@@ -933,6 +608,19 @@ hr.rounded {
   overflow: hidden;
   background: var(--clr-accent);
   text-decoration: none;
+}
+
+.title{
+  text-align: center;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  color: var(--clr-accent);
+  line-height: 1;
+  position: relative;
+  z-index: 5;
+  font-size: clamp(1rem, 1vw, 1rem);
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 1);
 }
 
 .portfolio__img {
@@ -956,220 +644,12 @@ hr.rounded {
     opacity: 0.75;
 }
 
-.title{
-  color: var(--clr-light);
-  position: relative;
-  z-index: 5;
-  font-size: clamp(1rem, 1vw, 1rem);
-  padding: 0.5rem;
-  background: rgba(0, 0, 0, 1);
-}
-
 
 /*------------------------------------------*/
-/* Unreal Logo */
-.intro__img__portfolio1 {
-  filter: invert(100%);
-  position: absolute;
-  width: 15%;
-  right: 5%;
-  top: 0%;
-}
+/*-----Slide Show Container And Style-------*/
+/*------------------------------------------*/
 
-/* Maya Logo */
-.intro__img__portfolio2 {
-  position: absolute;
-  width: 15%;
-  right: 5%;
-  top: 0;
-}
-
-/* HTML JS Logo */
-.intro__img__portfolio3 {
-  position: absolute;
-  width: 20%;
-  right: 5%;
-  top: 2%;
-}
-
-/* ML5 Logo */
-.intro__img__portfolio4 {
-  position: absolute;
-  width: 20%;
-  right: 30%;
-  top: 5%;
-}
-
-/* C++ Logo */
-.intro__img__portfolio5 {
-  position: absolute;
-  width: 7%;
-  right: 30%;
-  top: 65%;
-}
-
-/* OpenGL Logo */
-.intro__img__portfolio6 {
-  position: absolute;
-  width: 20%;
-  right: 5%;
-  top: -5%;
-}
-
-/* WEBGL Logo */
-.intro__img__portfolio7 {
-  position: absolute;
-  width: 30%;
-  right: 15%;
-  top: 32%;
-}
-
-@media (min-width: 1000px) {
-
-  .intro__img__portfolio1 {
-    filter: invert(100%);
-    grid-area: img;
-    min-width: 120px;
-    position: relative;
-    z-index: 2;
-    top: 0;
-  }
-
-  /* MAYA */
-  .intro__img__portfolio2 {
-    grid-area: img;
-    min-width: 100px;
-    position: relative;
-    z-index: 2;
-    top: 0;
-  }
-
-  /* HTML JS Logo */
-  .intro__img__portfolio3 {
-    grid-area: img;
-    min-width: 120px;
-    position: relative;
-    z-index: 2;
-        top: 0;
-  }
-
-  /* ML5 Logo */
-  .intro__img__portfolio4 {
-    grid-area: img;
-    min-width: 150px;
-    position: relative;
-    z-index: 2;
-    top: 0;
-    left: 1px;
-  }
-
-  /* C++ Logo */
-  .intro__img__portfolio5 {
-    grid-area: img;
-    min-width: 60px;
-    position: relative;
-    z-index: 2;
-    top: 0;
-  }
-
-  /* OpenGL Logo */
-  .intro__img__portfolio6 {
-    grid-area: img;
-    min-width: 120px;
-    position: relative;
-    z-index: 2;
-    top: 0;
-
-  }
-
-  /* WEBGL Logo */
-  .intro__img__portfolio7 {
-    grid-area: img;
-    min-width: 200px;
-    position: relative;
-    z-index: 2;
-    top: 0;
-  }
-}
-
-/* portfolio items */
-
-.portfolio-item {
-  /* padding: 0 2em 2em; */
-  /* max-width: 800px; */
-  /* margin: 0 auto; */
-}
-
-.portfolio-item ul li {
-  /* padding: 0.1em 0.1em 1em; */
-  /* max-width: 800px; */
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* list-style-image: url("img/cube1.png"); */
-  /* padding: 10px 10px 10px 10px; */
-  margin: 0% 2% 5% 2%;
-  padding-left: 3.5%;
-  padding-right: 3.5%;
-  font-family: var(--ff-primary);
-  font-weight: 600;
-  font-size: 1.25em;
-  opacity: 0.89
-  list-style-type: circle;
-  /* list-style-position: outside; */
-}
-
-.portfolio-item p {
-  /* max-width: 800px; */
-  /* margin-left: 10px auto;
-  margin-right: auto;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  padding-left: 2%;
-  padding-right: 2%; */
-}
-
-.p-image {
-  padding: 20px;
-  width: 80%;
-  height: 80%;
-  margin: 0 auto;
-  display: block;
-}
-
-.portfolio-item-video {
-  height: 100% auto;
-  width: 100% auto;
-  padding: 3% 3% 3% 3%;
-  display: flex;
-  /* This centers our sketch horizontally. */
-  justify-content: center;
-  /* This centers our sketch vertically. */
-  align-items: center;
-}
-
-.portfolio-item-slideshow {
-  height: 100% auto;
-  width: 100% auto;
-  padding: 0% 2% 0% 2%;
-  display: flex;
-  /* This centers our sketch horizontally. */
-  justify-content: center;
-  /* This centers our sketch vertically. */
-  align-items: center;
-}
-
-
-/* background shape */
-.videoBorder {
-  border-radius: 10px;
-  border-width: thin;
-  border-color: rgba(221, 221, 221, 0.2);
-  border-style: solid;
-  background: rgba(0, 0, 0, 1);
-  margin: 10% 5% 10% 5%;
-}
-
-/* background shape */
+/* Slide show low poly ship */
 .imgBorder {
   border-radius: 10px;
   border-width: thin;
@@ -1179,29 +659,45 @@ hr.rounded {
   margin: 2% 2% 2% 2%;
 }
 
-/* background shape */
-.sketchBorder {
-  border-radius: 10px;
-  border-width: thin;
-  border-color: rgba(221, 221, 221, 0.2);
-  border-style: solid;
-  background: rgba(0, 0, 0, 1);
-  padding: 2%;
+.portfolio-item-slideshow {
+  height: 100% auto;
+  width: 100% auto;
+  padding: 0% 2% 0% 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* background shape */
-.imgBorderLP {
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+/*------------------------------------------*/
+/*------ You tube resizable video code -----*/
+/*------------------------------------------*/
+/* background border shape for images and videos */
+.videoBorder {
   border-radius: 10px;
+  max-width: 95%;
   border-width: thin;
   border-color: rgba(221, 221, 221, 0.2);
   border-style: solid;
   background: rgba(0, 0, 0, 1);
-  margin: 2% 2% 2% 2%;
-  padding: 0%;
-}
-.imgBorderLP img {
-  width:100%;
-  filter: brightness(1.2);
+  margin: 2% auto 2% auto;
 }
 
 .auto-resizable-iframe {
@@ -1225,229 +721,35 @@ hr.rounded {
   height: 100%;
 }
 
-.portfolio-item-img {
-  /* height: 100% auto;
-  width: 100% auto; */
-  /* padding: 2%; */
-  margin: 2% 2% 2% 2%;
-  display: flex;
-  /* This centers our sketch horizontally. */
-  justify-content: center;
-  /* This centers our sketch vertically. */
-  align-items: center;
-}
-
-.portfolio-item-pdf {
-  padding: 40px;
-  width: 100%;
-  height: 400px;
-  margin: 0 auto;
-}
-
-/* background shape */
-.codeBorder {
+/*------------------------------------------*/
+/* Image Borders And Style */
+.imgBorder {
   border-radius: 10px;
   border-width: thin;
   border-color: rgba(221, 221, 221, 0.2);
   border-style: solid;
   background: rgba(0, 0, 0, 1);
-  margin: 5%;
+  margin: 2% 5% 2% 5%;
+  padding: 0%;
 }
 
-.code-block {
-  position: relative;
-  padding: 2%;
-  width: 100%;
-  height: 100%;
-
+.imgBorder img {
+  width:100%;
+  filter: brightness(1.2);
 }
 
-
-@media (min-width: 600px) {
-
-  /* .portfolio-item-video {
-    height: 100% auto;
-    width: 100% auto;
-    padding: 2% 2% 2% 2%;
-    display: flex;
-    This centers our sketch horizontally.
-    justify-content: center;
-    This centers our sketch vertically.
-    align-items: center;
-  } */
-/*
-  .portfolio-item-img {
-    height: 500px;
-    width: 100% auto;
-    color: var(--clr-accent);
-    padding-bottom: 50px;
-    padding-top: 20px;
-    margin-top: 20%;
-    margin-bottom: 20%;
-    display: flex;
-
-  } */
-
-  /* .code-block {
-    position: relative;
-    padding: 0px;
-    width: 100%;
-    height: 100%;
-    margin: 0px auto;
-  } */
-
-  .portfolio-item-pdf {
-    padding: 40px;
-    width: 100%;
-    height: 800px;
-    margin: 0 auto;
-  }
-
-  .p-image {
-    padding: 40px;
-    width: 80%;
-    height: 80%;
-    margin: 0 auto;
-    display: block;
-  }
-
-}
-
-/* ------------------------------ */
-#sketch-container-game {
-  width: 100% auto;
-  /* background-position: center;
-  background-size: cover;
-  display: table; */
-  padding-bottom: 0px;
-  padding-top: 0px;
-  margin: 0;
+.imgBorder-style {
+  margin: 2% 2% 2% 2%;
   display: flex;
-  /* This centers our sketch horizontally. */
   justify-content: center;
-  /* This centers our sketch vertically. */
   align-items: center;
 }
 
-#sketch-container {
-  width: 80% auto;
-  color: var(--clr-accent);
-  padding-bottom: 2%;
-  padding-top: 2%;
-  margin: 0;
-  display: flex;
-  /* This centers our sketch horizontally. */
-  justify-content: center;
-  /* This centers our sketch vertically. */
-  align-items: center;
-}
-
-#sketch-container-project{
-  width: 100% auto;
-  background-position: center;
-  background-size: cover;
-  display: table;
-  padding-bottom: 10px;
-  padding-top: 10%;
-  display: flex;
-  /* This centers our sketch horizontally. */
-  justify-content: center;
-  /* This centers our sketch vertically. */
-  align-items: center;
-}
-
-#sketch-container-posenet{
-  height: 50% auto;
-  width: 50% auto;
-  color: var(--clr-accent);
-  /* padding-bottom: 50px;
-  padding-top: 20px; */
-  margin: 0;
-  display: flex;
-  /* This centers our sketch horizontally. */
-  justify-content: center;
-  /* This centers our sketch vertically. */
-  align-items: center;
-
-}
-
-#sketch-container-posenetFinal {
-  width: 100% auto;
-  background-position: center;
-  background-size: cover;
-  display: table;
-  /* padding-bottom: 10%;
-  padding-top: 10%; */
-  display: flex;
-/* This centers our sketch horizontally. */
-  justify-content: center;
-/* This centers our sketch vertically. */
-  align-items: center;
-
-}
-
-
-#sketch-container-cubeWEBGL {
-  width: 100% auto;
-  background-position: center;
-  background-size: cover;
-  display: table;
-  padding-bottom: 10px;
-  padding-top: 15%;
-  display: flex;
-/* This centers our sketch horizontally. */
-  justify-content: center;
-/* This centers our sketch vertically. */
-  align-items: center;
-}
-
-/* ------------------------------ */
+/*------------------------------------------*/
+/* ---------Sketch Containers Style-------- */
 .vision-body {
   background-color: black;
 }
-
-.vision-container {
-  width:100%;
-  position: relative;
-  margin: auto;
-  height: auto;
-}
-
-/* ------------------------------ */
-/* Rounded Link Box */
-
-.demo-link a{
-  text-decoration: none;
-  color: white;
-}
-
-/* Change background on mouse-over */
-.demo-link a:hover {
-    color: var(--clr-accent);
-}
-
-.demo-link {
-  margin: auto;
-  margin-bottom: 5%;
-  width: 30%;
-  text-align: center;
-  font-family: var(--ff-secondary);
-  border: 1px solid white;
-  border-radius: 10px;
-}
-
-.demo-play {
-  margin: auto;
-  margin-top: 1%;
-  width: 40%;
-  text-align: center;
-  font-family: var(--ff-secondary);
-  /* border: 1px solid white;
-  border-radius: 10px; */
-}
-
-
-/* ------------------------------ */
 
 .webgl-img {
   object-fit: cover;
@@ -1461,18 +763,140 @@ hr.rounded {
   padding-bottom: 2%;
 }
 
-/* ------------------------------ */
 
-pre code {
-  background-color: #eee;
-  border: 1px solid #999;
-  display: block;
-  padding: 10px;
+/* ?????????????? */
+.vision-container {
+  width:100%;
+  position: relative;
+  margin: auto;
+  height: auto;
+}
+
+/* ?????????????? */
+.sketchBorder {
+  width: 100%;
+  height: 320x;
+  border-radius: 10px;
+  border-width: thin;
+  border-color: rgba(221, 221, 221, 0.2);
+  border-style: solid;
+  background: rgba(0, 0, 0, 1);
+  margin: 2% 0% 2% 0%;
+}
+
+
+/*------------------------------------------*/
+/*----------P5 Sketch Container-------------*/
+/*------------------------------------------*/
+#sketch-container-game {
+  width: 100% auto;
+  display: flex;
+  margin-bottom: 2%;
+  justify-content: center;
+  align-items: center;
+}
+
+#sketch-container {
+  color: var(--clr-accent);
+  padding: 2%;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sketch-container-design {
+  color: var(--clr-accent);
+  padding: 2%;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sketch-container-project{
+  width: 100% auto;
+  background-position: center;
+  background-size: cover;
+  display: table;
+  padding-bottom: 10px;
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sketch-container-posenet{
+  height: 50% auto;
+  width: 50% auto;
+  color: var(--clr-accent);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#sketch-container-posenetFinal {
+  width: 100% auto;
+  background-position: center;
+  background-size: cover;
+  display: table;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#sketch-container-cubeWEBGL {
+  width: 100% auto;
+  background-position: center;
+  background-size: cover;
+  display: table;
+  padding-bottom: 8%;
+  padding-top: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------ */
+/* --------Links Styling--------- */
+/* ------------------------------ */
+/* Rounded Link Box */
+.demo-link a{
+  text-decoration: none;
+  color: white;
+}
+
+/* Change background on mouse-over */
+.demo-link a:hover {
+    color: var(--clr-accent);
+}
+
+.demo-link {
+  /* margin: auto; */
+  margin: 6% auto 6% auto;
+  width: 20%;
+  text-align: center;
+  font-family: var(--ff-secondary);
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 0.5em;
+}
+
+.demo-play {
+  margin: auto;
+  margin-top: 1%;
+  width: 40%;
+  text-align: center;
+  font-family: var(--ff-secondary);
+  color: white;
 }
 
 /*------------------------------------------*/
-/* Footer */
-
+/*-------------- Footer --------------------*/
+/*------------------------------------------*/
 .footer {
   background: #111;
   color: var(--clr-accent);
@@ -1490,7 +914,6 @@ pre code {
 .footer a {
   color: inherit;
   text-decoration: none;
-
 }
 
 .footer__link {
@@ -1522,45 +945,102 @@ pre code {
   padding: .5em;
 }
 
-
 /* ------------------------------ */
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  /* margin: auto; */
-  margin-top: 2%;
-  margin-bottom: 2%;
-
-}
-
-/* On smaller screens, decrease text size */
-@media (min-width: 300px) {
-
-    /* .slideshow-container {
-        max-width: 100%;
-        position: relative;
-        margin: auto;
-        margin-top: 2%;
-        margin-bottom: 2%;
-      } */
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 2.5s;
-}
-
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
+/*------------------------------------------*/
+/*---------- May Use In Future --------------*/
+/*------------------------------------------*/
+.portfolio-item-pdf {
+  padding: 40px;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.codeBorder {
+  border-radius: 10px;
+  border-width: thin;
+  border-color: rgba(221, 221, 221, 0.2);
+  border-style: solid;
+  background: rgba(0, 0, 0, 1);
+  margin: 5%;
+}
+
+.code-block {
+  position: relative;
+  padding: 2%;
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (min-width: 600px) {
+  .portfolio-item-pdf {
+    padding: 40px;
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+  }
+
+  .p-image {
+    padding: 40px;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+/*------------------------------------------*/
+/*------------------------------------------*/
+
+/* ??????????????????????? */
+.portfolio-item ul li {
+  margin: 0% 2% 5% 2%;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+  font-family: var(--ff-primary);
+  font-weight: 600;
+  font-size: 1.25em;
+  opacity: 0.89
+  list-style-type: circle;
+}
+
+/* ??????????????????????? */
+.p-image {
+  padding: 20px;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* ??????????????????????? */
+.portfolio-item-video {
+  height: 100% auto;
+  width: 100% auto;
+  padding: 3% 3% 3% 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------ */
+/* ????????????????????????????? */
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 10px;
+}
+
+/*------------------------------------------*/
+
 
 
 /*!

@@ -19,6 +19,7 @@
       <script language="javascript" type="text/javascript" src="../js/libraries/p5.js"></script>
       <script language="javascript" type="text/javascript" src="../js/libraries/p5.sound.min.js"></script>
       <script language="javascript" type="text/javascript" src="../js/treeWEBGL/tree.js"></script>
+      <script language="javascript" type="text/javascript" src="../js/genDesign/sketch.js"></script>
     </head>
 
     <!-------------------------------------------------------------------------->
@@ -33,69 +34,105 @@
         </header>
 
         <!--------------------------------------->
-        <div class="margin-portfolio">
-          <div class="roundedSquareIndex">
-
+        <div class="margin-main">
+          <!---------------------------------------------------------------------->
+          <div class="background-shape">
             <!---------------------------------------------------------------------->
-            <!-- Introduction -->
-            <section class="intro" id="home">
+            <div class="margin-inner">
+
+
+              <!---------------------------------------------------------------------->
+              <!-- Introduction -->
+              <div class="intro" id="home">
                 <!-- Title -->
-                <h1 class="section__title--portfolio">
-                  <strong>WebGL</strong>
+                <h1 class="intro-title">
+                  Generative Design:<strong>Sketch Book</strong>
                 </h1>
-                <!-- Subtitle -->
-                <p class="section__subtitle--portfolio">3D Design & Interaction</p>
-                <!-- Logo -->
-                <img class="intro__img__portfolio7" src="../img/WebGL-Logo.svg" alt="profile image">
-            </section>
 
-            <!---------------------------------------------------------------------->
-            <div class="portfolio-item">
-                <p class="section__subtitle-portfolio-main">WebGL | P5.js </p>
-
-              <!-- divider -->
-              <div class="divider-portfolio">
-                <hr class="rounded">
-              </div>
-
-              <div class="about-me__portfolio-body">
-
-                <!-- Title 1 -->
-                <h2 class="section__subtitle--heading">3D Design and Audio Interaction:</h2>
-                <p>The sketch below demonstrates audio responsivness using a microphone to trigger lighting and animation. </p>
-
-                <div class="videoBorder">
-                  <div id="sketch-container"></div>
-                </div>
                 <!-- divider -->
-                <div class="divider-portfolio">
+                <div class="divider">
                   <hr class="rounded">
                 </div>
 
+
+                  <!-- Subtitle -->
+                <h3 class="subtitle_align-right subtitle-style subtitle-shape ">JavaScript | P5.Js</h3>
+
+              </div>
+
+              <!---------------------------------------------------------------------->
+
+              <!-- divider -->
+              <div class="divider">
+                <hr class="rounded">
+              </div>
+
+              <!-- <div class="text_body"> -->
+
+                <!-- Title 1 -->
+                <!-- <h2 class="intro-title">3D Design and Audio Interaction:</h2>
+                  <p>
+                    The sketch below demonstrates audio responsivness using a microphone to trigger lighting and animation.
+                  </p>
+                </div> -->
+
+                <div class="videoBorder">
+                    <div id="sketch-container"></div>
+                </div>
+
+                <!-- divider -->
+                <!-- <div class="divider">
+                  <hr class="rounded">
+                </div> -->
+
+                <div class="videoBorder">
+                    <div id="sketch-container-design"></div>
+                </div>
+
+                <!-- divider -->
+                <div class="divider">
+                  <hr class="rounded">
+                </div>
+
+
                 <!---------------------------------------------------------------------->
                 <!-- Title 1 -->
-                <h2 class="section__subtitle--heading">Audio Visualisation</h2>
-                <p>This audio visualisation explores perception and combines an original soundtrack with generative design and audio interaction.</p>
+                <div class="text_body">
+                  <h2 >Audio Visualisation</h2>
+                  <p>This audio visualisation explores perception and combines an original soundtrack with generative design and audio interaction.</p>
+                </div>
 
                 <div class="videoBorder">
                   <div class="webgl-container">
-                    <img src="../img/webglCube.png" class="webgl-img">
+                    <img src="../img/indexIMG/webglCube.png" class="webgl-img">
                   </div>
                 </div>
 
                 <div class="demo-link">
-                  <a href="WEBGLcube.html">Continue to Demo</a>
+                  <a href="WEBGLcube.html">Demo</a>
                 </div>
 
-                <!-- divider -->
-                <div class="divider-portfolio">
-                  <hr class="rounded">
-                </div>
+
 
                 <!---------------------------------------------------------------------->
-                <!-- Title 1 -->
-                <h2 class="section__subtitle--heading">3D Face API</h2>
-                <p>Using ml5.js Face API I designed an interactive piece using WebGl and shaders.</p>
+                <!-- <div class="text_body">
+                  <h2>3D Face API</h2>
+                  <p>Using ml5.js Face API I designed an interactive piece using WebGl and shaders.</p>
+                </div> -->
+
+                <!-- <div class="videoBorder">
+                    <div id="sketch-container-design"></div>
+                </div> -->
+
+                <!-- <div class="demo-link">
+                  <a href="WEBGLfaceAPI.html">Continue to Demo</a>
+                </div> -->
+
+                <!---------------------------------------------------------------------->
+                <!-- <div class="text_body">
+                  <h2>3D Face API</h2>
+                  <p>Using ml5.js Face API I designed an interactive piece using WebGl and shaders.</p>
+                </div>
 
                 <div class="videoBorder">
                   <div class="webgl-container">
@@ -105,17 +142,13 @@
 
                 <div class="demo-link">
                   <a href="WEBGLfaceAPI.html">Continue to Demo</a>
-                </div>
+                </div> -->
 
-                <!-- divider -->
-                <div class="divider">
-                  <hr class="rounded">
-                </div>
 
-              </div>
             </div>
           </div>
         </div>
+      </div>
 
         <!---------------------------------------------------------------------->
         <!-- Footer -->
