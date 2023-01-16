@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!---->
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+      <title>Phil's Portfolio</title>
+
+      <!--CSS-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <link rel="stylesheet" href="../style.css">
+
+      <!-- Select-Google-Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,900;1,400&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    </head>
+
+    <!---->
+    <body class="portfolio-body-ar">
+
+      <!--------------------------------------->
+      <header>
+        <!-- Nav Bar -->
+        <div class="navbar">
+          <a href="../index.html#work">Home</a>
+          <a href="#overview">Overview</a>
+          <a href="#setup">Setup</a>
+          <a href="#development">Development</a>
+          <a href="#modelling">Modelling</a>
+          <a href="#texturing">Texturing</a>
+          <a href="#reflections">Reflections</a>
+        </div>
+      </header>
+
+      <!--------------------------------------->
+      <div class="margin-main">
+        <!---------------------------------------------------------------------->
+        <div class="background-shape">
+          <!---------------------------------------------------------------------->
+          <div class="margin-inner">
+
+            <!--------------------------------------->
+            <!-- Introduction -->
+            <div class="intro" id="overview">
+                <!-- Main Title -->
+                <h1 class="intro-title">
+                  Philip Kinshuck<strong>AR adventure book</strong>
+                </h1>
+
+                <!-- Divider -->
+                <div class="divider">
+                  <hr class="rounded">
+                </div>
+
+                <h3 class="subtitle_align-right subtitle-style subtitle-shape ">Technical Artist | Animator | 3D Modelling</h3>
+            </div>
+
+            <!--------------------------------------->
+            <!-- Divider -->
+            <div class="divider" >
+              <hr class="rounded">
+            </div>
+
+
+            <!-- OVERVIEW -->
+            <!--------------------------------------->
+            <div class="text_body" >
+              <h2>Overview:</h2>
+              <p>
+                Based on the classic poem by Edward Lear ‘The Owl and the Pussycat’,
+                this group project makes use of AR technology blending the virtual and physical world to create a complete immersive experience.
+              </p>
+
+            </div>
+
+            <!-- VIDEO -->
+            <!--------------------------------------->
+            <div class="videoBorder">
+              <div class="auto-resizable-iframe">
+                <div>
+                  <!-- <iframe src="https://youtu.be/bpqWKf_Iygw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/bpqWKf_Iygw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="text_body">
+                <p>
+                  Using a system derived from ‘choose your own adventure books’ the user takes full control of the story
+                  by moving physical place holders on the page deciding the final outcome.
+                </p>
+            </div>
+
+
+
+            <!-- Setup -->
+            <!--------------------------------------->
+            <div class="text_body" id="setup">
+              <div class="divider-break"></div>
+              <!--------------------------------------->
+              <!-- Divider -->
+              <div class="divider">
+                <hr class="rounded">
+              </div>
+
+              <h3 class="subtitle_align-left subtitle-style subtitle-shape ">Setup:</h3>
+
+              <!--------------------------------------->
+              <!-- Divider -->
+              <div class="divider">
+                <hr class="rounded">
+              </div>
+
+              <!--------------------------------------->
+              <div class="divider-p">
+                <p>
+                  Implementing <a class="main-links" href="https://trello.com/b/Hx5HYVv2/ar-book" >Trello</a> to organize and assign tasks
+                  combined with version control practice using <a class="main-links" href="https://github.com/jpverhaeghe/AR_ChooseAdvBook" >github</a>
+                  enabled our group to effectively work remotely.
+                </p>
+              </div>
+
+              <!--------------------------------------->
+              <div class="divider-p">
+                <p>
+                  Creating the concept by visually brainstorming using an interface design tool <a class="main-links" href="https://bit.ly/3UEQjaz" >Figma</a>
+                  made it possible to develop ideas through flow charts creating a solid concept and understanding between group members.
+                </p>
+              </div>
+            </div>
+
+
+            <!--------------------------------------->
+            <!-- Animation -->
+            <div class="text_body" id="development">
+              <div class="divider-break"></div>
+
+              <div class="divider">
+                <hr class="rounded">
+              </div>
+
+              <h3 class="subtitle_align-left subtitle-style subtitle-shape ">Development:</h3>
+
+              <div class="divider">
+                <hr class="rounded">
+              </div>
+
+
+              <div class="divider-p">
+                <p>
+                  My first task was to implement animations
+                  from <a class="main-links" href="https://www.mixamo.com/#/?page=1&query=jump&type=Motion%2CMotionPack" >Mixamo</a>.
+                  By combining Unity's <a class="main-links" href="https://docs.unity3d.com/ScriptReference/AI.NavMeshAgent.html" >Nav Mesh Agent</a>
+                  it was possible to precisely apply motion and position to the character. To apply nav mesh data into a prefab it was necessary to use an experimental high level navigation mesh building component, pre baking the navigation data into the scene.
+
+                </p>
+              </div>
+            </div>
+
+            <div class="videoBorder">
+              <div class="portfolio-item-video">
+                  <img src="/img/arAdvBookIMG/navMeshDevgif.gif">
+              </div>
+            </div>
+
+            <br>
+            <br>
+
+
+
+
+
+            <!---------------------------------------------------------------------->
+            <!-- Modelling -->
+            <div class="text_body" id="modelling">
+
+              <div class="divider-break"></div>
+
+              <div class="divider">
+                <hr class="rounded">
+              </div>
+
+              <h3 class="subtitle_align-left subtitle-style subtitle-shape ">Modelling:</h3>
+
+              <div class="divider">
+                <hr class="rounded">
+              </div>
+
+              <div class="divider-p">
+                <p>
+                  Using Maya I created all the assets for the project. The charcters where then uploaded to mixamo and then imported into unity.
+                  Applying the rigged models into my custom animation controller allowed me to apply different states of animation linked to logic created by other group members.
+
+                </p>
+                <br>
+                <br>
+
+              </div>
+
+
+              <!---------------------------->
+              <div class="portfolio-main" id="work">
+                 <!---------------------------->
+                 <div class="background-shape-portfolio">
+
+                   <div class="portfolio">
+
+                     <!---------------------------->
+                     <div class="portfolio__item">
+                       <!-- <h3 class="title">Live AV Performance - UE4</h3> -->
+                       <img src="../img/arAdvBookIMG/Models/catModel.png" alt="" class="portfolio__img">
+                     </div>
+
+                    <!---------------------------->
+                     <div class="portfolio__item">
+                       <!-- <h3 class="title">AR Adventure Book</h3> -->
+                       <img src="../img/arAdvBookIMG/Models/owlModel.png" alt="" class="portfolio__img">
+                     </div>
+
+                     <div class="portfolio__item">
+                       <!-- <h3 class="title">AR Adventure Book</h3> -->
+                       <img src="../img/arAdvBookIMG/Models/owlModelTexture.png" alt="" class="portfolio__img">
+                     </div>
+
+                     <!---------------------------->
+                     <div class="portfolio__item">
+                       <!-- <h3 class="title">AR Adventure Book</h3> -->
+                       <img src="../img/arAdvBookIMG/Models/terrainPage1.png" alt="" class="portfolio__img">
+                     </div>
+
+                     <div class="portfolio__item">
+                       <!-- <h3 class="title">AR Adventure Book</h3> -->
+                       <img src="../img/arAdvBookIMG/Models/terrainPage2.png" alt="" class="portfolio__img">
+                     </div>
+
+                     <div class="portfolio__item">
+                       <!-- <h3 class="title">AR Adventure Book</h3> -->
+                       <img src="../img/arAdvBookIMG/Models/caveModel.png" alt="" class="portfolio__img">
+                     </div>
+
+                     <div class="portfolio__item">
+                       <!-- <h3 class="title">AR Adventure Book</h3> -->
+                       <img src="../img/arAdvBookIMG/Models/boatModel.png" alt="" class="portfolio__img">
+                     </div>
+
+                     <div class="portfolio__item">
+                       <!-- <h3 class="title">AR Adventure Book</h3> -->
+                       <img src="../img/arAdvBookIMG/Models/plateModel.png" alt="" class="portfolio__img">
+                     </div>
+
+
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <!---------------------------------------------------------------------->
+
+
+             <!---------------------------------------------------------------------->
+             <!-- Portfolio Main Projects-->
+             <div class="text_body" id="texturing">
+
+               <div class="divider-break"></div>
+
+               <div class="divider">
+                 <hr class="rounded">
+               </div>
+
+               <h3 class="subtitle_align-left subtitle-style subtitle-shape ">Texturing:</h3>
+
+               <div class="divider">
+                 <hr class="rounded">
+               </div>
+
+               <div class="divider-p">
+                 <p>
+                   After UV unwrapping models in MAYA the fbx files where then exported to Adobe Substance Painer where high quality textures can be applied.
+                   Using tri-planar projects, normal and specular texture maps allowed for extra detailing and texture.
+                   Experimenting with Substance Designer and following a
+                   <a href="https://www.google.com/search?q=create+feather+substance+designer&rlz=1C1CHZN_enGB971GB971&oq=create+feather+substance+designer&aqs=chrome..69i57j0i546l5.8018j0j7&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:5c0b883e,vid:CH-z4N4WLcwtutorial">
+                   tutorial </a> I developed a custom procedural feather textures seen in the Owl model.
+                 </p>
+                 <br>
+                 <br>
+
+               </div>
+
+
+               <!---------------------------->
+               <!-- Texturing -->
+               <div class="portfolio-main" id="work">
+                  <!---------------------------->
+                  <div class="background-shape-portfolio">
+
+                    <div class="portfolio">
+
+                      <!---------------------------->
+                      <div class="portfolio__item">
+                        <!-- <h3 class="title">Live AV Performance - UE4</h3> -->
+                        <img src="../img/arAdvBookIMG/Textures/Cat.png" alt="" class="portfolio__img">
+                      </div>
+
+                     <!---------------------------->
+                      <div class="portfolio__item">
+                        <!-- <h3 class="title">AR Adventure Book</h3> -->
+                        <img src="../img/arAdvBookIMG/Textures/Owl.png" alt="" class="portfolio__img">
+                      </div>
+
+                      <div class="portfolio__item">
+                        <!-- <h3 class="title">AR Adventure Book</h3> -->
+                        <img src="../img/arAdvBookIMG/Textures/feathersLight.PNG" alt="" class="portfolio__img">
+                      </div>
+
+                      <div class="portfolio__item">
+                        <!-- <h3 class="title">AR Adventure Book</h3> -->
+                        <img src="../img/arAdvBookIMG/Textures/feathersDark.PNG" alt="" class="portfolio__img">
+                      </div>
+
+                      <div class="portfolio__item">
+                        <!-- <h3 class="title">AR Adventure Book</h3> -->
+                        <img src="../img/arAdvBookIMG/Textures/Bridge.png" alt="" class="portfolio__img">
+                      </div>
+
+                      <!---------------------------->
+                      <div class="portfolio__item">
+                        <!-- <h3 class="title">AR Adventure Book</h3> -->
+                        <img src="../img/arAdvBookIMG/Textures/Boat.png" alt="" class="portfolio__img">
+                      </div>
+
+                      <div class="portfolio__item">
+                        <!-- <h3 class="title">AR Adventure Book</h3> -->
+                        <img src="../img/arAdvBookIMG/Textures/Cave.png" alt="" class="portfolio__img">
+                      </div>
+
+                      <div class="portfolio__item">
+                        <!-- <h3 class="title">AR Adventure Book</h3> -->
+                        <img src="../img/arAdvBookIMG/Textures/Water.png" alt="" class="portfolio__img">
+                      </div>
+
+                      <div class="portfolio__item">
+                        <!-- <h3 class="title">AR Adventure Book</h3> -->
+                        <img src="../img/arAdvBookIMG/Textures/Terrain2.png" alt="" class="portfolio__img">
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!---------------------------->
+
+              <!-- Setup -->
+              <!--------------------------------------->
+              <div class="text_body" id="reflections">
+                <div class="divider-break"></div>
+                <!--------------------------------------->
+                <!-- Divider -->
+                <div class="divider">
+                  <hr class="rounded">
+                </div>
+
+                <h3 class="subtitle_align-left subtitle-style subtitle-shape ">Reflections:</h3>
+
+                <!--------------------------------------->
+                <!-- Divider -->
+                <div class="divider">
+                  <hr class="rounded">
+                </div>
+
+                <!--------------------------------------->
+                <div class="divider-p">
+                  <p>
+                    Overall the project had a positive response and the concept was well recieved
+                    however there are still some outstanding issues.
+                    This could be seen in the demonstration with the camera not recognising the placeholders and moving the virtual objects into the correct position,
+                    making the experience not flow as excpected.
+                    This problem will need to be addressed before demonstrating the project to any industry proffesional.
+                  </p>
+                </div>
+
+                <!--------------------------------------->
+                <div class="divider-p">
+                  <p>
+                    The most challenging part of my process was learning to implement animations and apply the nav mesh agent in Unity to the prefab.
+                    Overcoming this challange took a long time to research and find a solution however the end result allows the project to be easily developed further and add new levels with a more complex layout.
+                  </p>
+                </div>
+
+
+
+                <!--------------------------------------->
+                <div class="divider-p">
+                  <p>
+                    Finally I would like to thank my group for their effort and support throughout development. We worked together and grew as a team, utilising our skills efficiently and implementing our ideas.
+                  </p>
+                </div>
+              </div>
+              </div>
+
+
+
+          <br>
+          <br>
+          <br>
+
+
+
+          <!--------------------------------------->
+          <!--------------------------------------->
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Footer -->
+      <footer class="footer">
+        <ul class="social-list">
+
+          <li class="social-list__item">
+            <a class="social-list__link" a href="mailto:pkins001@gold.ac.uk" target="_blank">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com/k1nn13" target="_blank">
+              <i class="fas fa-code"></i>
+            </a>
+          </li>
+
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://www.linkedin.com/in/philip-kinshuck-46423a242/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://soundcloud.com/daygunmusic" target="_blank">
+              <i class="fab fa-soundcloud"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+
+    </body>
+</html>
