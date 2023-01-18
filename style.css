@@ -8,19 +8,19 @@
 /* Main Image On Index*/
 .index-body::before {
     content: "";
-    position: absolute;
+    position: fixed;
   	width: 100%;
-  	height: 110%;
+  	height: 100%;
     background-image: url(../img/backgroundIMG/WaterSceneLarge2.jpg);
     background-size: cover;
-    background-position: top left;
+    background-position: center;
     background-repeat: no-repeat;
     z-index: -1000;
 }
 
-/*------------------------------------------*/
-/*-------------UE4 Project-------------------*/
-/*------------------------------------------*/
+
+/*-------------UE4 Project--------------*/
+/*---------- Used in: ue4_av -----------*/
 .portfolio-body {
   position: relative;
 }
@@ -28,9 +28,9 @@
 /* Main Image */
 .portfolio-body::before {
     content: "";
-    position: absolute;
+    position: fixed;
   	width: 100%;
-  	height: 110%;
+  	height: 100%;
     background-image: url(../img/backgroundIMG/portfolioBg.jpg);
     background-size: cover;
     background-position: top;
@@ -38,7 +38,9 @@
     z-index: -1000;
 }
 
-/*------------------------------------------*/
+
+/*-------------Game JS Project--------------*/
+/*---------- Used in: gameProject -----------*/
 .portfolio-body-game {
   position: relative;
 }
@@ -58,67 +60,9 @@
     transform: scaleY(-1);
 }
 
-/*------------------------------------------*/
-.portfolio-body-iota {
-  position: relative;
-}
 
-/* Main Image */
-.portfolio-body-iota::before {
-    content: "";
-    position: absolute;
-  	width: 100%;
-  	height: 110%;
-    background-image: url(../img/backgroundIMG/WaterSceneLarge.jpg);
-    background-size: fit;
-    background-position: top;
-    background-repeat: repeat;
-    filter: blur(8px) brightness(0.8) contrast(4);
-    z-index: -1000;
-
-}
-
-/*------------------------------------------*/
-.portfolio-body-dark {
-  position: relative;
-}
-
-/* Main Image */
-.portfolio-body-dark::before {
-    content: "";
-    position: absolute;
-  	width: 100%;
-  	height: 110%;
-    background-image: url(../img/backgroundIMG/WaterSceneLarge.jpg);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    filter: blur(8px) brightness(1) contrast(1) invert(0) opacity(0.5);
-    z-index: -1000;
-}
-
-/*------------------------------------------*/
-.portfolio-body-audio {
-  position: relative;
-}
-
-/* Main Image */
-.portfolio-body-audio::before {
-    content: "";
-    position: absolute;
-  	width: 100%;
-  	height: 110%;
-    background-image: url(../img/backgroundIMG/WaterSceneLarge2.jpg);
-
-    background-size: cover;
-    background-position: top left;
-    background-repeat: no-repeat;
-    filter: blur(0px) brightness(1.2);
-    z-index: -1000;
-    transform: scaleX(-1);
-}
-
-/*------------------------------------------*/
+/*-------------ED 209 Project--------------*/
+/*---------- Used in: mayaED209 -----------*/
 .portfolio-body-ed {
   position: relative;
 }
@@ -126,21 +70,20 @@
 /* Main Image */
 .portfolio-body-ed::before {
     content: "";
-    position: absolute;
+    position: fixed;
   	width: 100%;
-  	height: 110%;
+  	height: 100%;
     background-image: url(../img/backgroundIMG/HoneyEd.jpg);
-
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
     filter: blur(1px) brightness(1);
     z-index: -1000;
-
-        min-height: 150%;
 }
 
-/*------------------------------------------*/
+
+/*----------MAYA Texture Project----------*/
+/*--------- Used in: mayaTexture -----------*/
 .portfolio-body-tex {
   position: relative;
 }
@@ -148,7 +91,7 @@
 /* Main Image */
 .portfolio-body-tex::before {
     content: "";
-    position: absolute;
+    position: fixed;
   	width: 100%;
   	height: 110%;
     background-image: url(../img/backgroundIMG/metalWorn.jpg);
@@ -161,7 +104,9 @@
     transform: scaleY(-1);
 }
 
-/*------------------------------------------*/
+
+/*----------MAYA Bunny Project----------*/
+/*--------- Used in: mayaBunny -----------*/
 .portfolio-body-bunny {
   position: relative;
 }
@@ -169,18 +114,20 @@
 /* Main Image */
 .portfolio-body-bunny::before {
     content: "";
-    position: absolute;
+    position: fixed;
   	width: 100%;
-  	height: 110%;
+  	height: 100%;
     background-image: url(../img/backgroundIMG/rock.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     filter: brightness(1.5);
     z-index: -1000;
 }
 
-/*------------------------------------------*/
+
+/*---------low poly ship Project----------*/
+/*------- Used in: maya low poly ---------*/
 .portfolio-body-metal {
   position: relative;
 }
@@ -193,14 +140,15 @@
   	height: 100%;
     background-image: url(../img/backgroundIMG/machineMetal.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: left;
     background-repeat: no-repeat;
-    filter: brightness(1.5);
+    filter: brightness(1);
     z-index: -1000;
-
 }
 
-/*------------------------------------------*/
+
+/*-----------MAYA nCloth Project-----------*/
+/*---------- Used in: mayaNcloth ----------*/
 .portfolio-body-nCloth {
   position: relative;
 }
@@ -208,21 +156,31 @@
 /* Main Image */
 .portfolio-body-nCloth::before {
     content: "";
-    position: absolute;
+    position: fixed;
   	width: 100%;
   	height: 100%;
     background-image: url(../img/backgroundIMG/nCloth.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     /* background-repeat: no-repeat; */
-    filter: brightness(1.2);
+    filter: brightness(1.8);
     z-index: -1000;
     transform: scaleY(-1);
-
-    min-height: 200%;
 }
 
-/*------------------------------------------*/
+
+/* ---------------------------------- */
+/*----------Plain Background----------*/
+/*
+Used in:
+    iotaSound
+    audio programming
+    poseNet
+    vision of sound
+    WEBGL
+    GLSL shaders
+*/
+
 .portfolio-body-portfolio {
   position: relative;
 }
@@ -230,22 +188,20 @@
 /* Main Image */
 .portfolio-body-portfolio::before {
     content: "";
-    position: absolute;
+    position: fixed;
   	width: 100%;
-  	height: 110%;
+  	height: 100%;
     background-image: url(../img/backgroundIMG/portfolioPlain.jpg);
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     filter:brightness(1);
     z-index: -1000;
     transform: scaleY(1);
-
-        min-height: 200%;
 }
 
-/* Ar Project */
+/*-------------AR Project--------------*/
+/*-------- Used in: arAdvBook ---------*/
 .portfolio-body-ar {
   position: relative;
 }
@@ -288,6 +244,8 @@
   --clr-dark: #303030;
   --clr-accent: rgba(228, 228, 228, 0.8);
   --clr-link: rgba(175, 228, 175, 0.8);
+  --clr-link-secondary: rgba(200, 200, 200, 0.5);
+  --clr-link-op: rgba(150, 150, 150, 0.25);
   --clr-black: #000000;
 
   --fs-h1: 2rem;
@@ -327,6 +285,10 @@ body {
 
 }
 
+section {
+
+}
+
 img {
   max-width: 100%;
 }
@@ -357,10 +319,6 @@ strong { font-weight: var(--fw-bold) }
   transform: scale(1.1);
 }
 
-section {
-
-}
-
 /* Typography */
 h1,
 h2,
@@ -369,7 +327,6 @@ P {
   line-height: 0;
   margin: 0;
   text-decoration: none;
-
 }
 
 h1 { font-size: var(--fs-h1) }
@@ -385,6 +342,33 @@ header {
 }
 
 
+button {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+
+  padding: 1%;
+  margin: 1%;
+  background-color: transparent;
+  display: inline-block;
+}
+
+/* Change background on mouse-over */
+button :hover {
+    color: var(--clr-accent);
+}
+
+.button-position{
+  /* border: 1px solid grey; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  color: var(--clr-link-secondary);
+    font-size: var(--fs-h2);
+}
 
 
 
@@ -392,8 +376,24 @@ header {
 /*--------------- Navigation--------------- */
 /*------------------------------------------*/
 .nav-container {
-  margin-left: 2%;
+  margin-left: .5em;
+  margin-right: .5em;
 }
+
+@media (min-width: 900px) {
+  .nav-container {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-container {
+    margin-left: 11%;
+    margin-right: 11%;
+  }
+}
+
 /* The navigation bar */
 .navbar {
   z-index: 99;
@@ -402,21 +402,58 @@ header {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  border-bottom: 1px solid grey;
+  border: 1px solid grey;
 }
 
-/* Links inside the navbar */
-.navbar a {
-  font-family: var(--ff-primary);
-  color: var(--clr-light);
+/*---------- links left ----------*/
 
+/* Links inside the navbar */
+.navbar .navlink-pos-left a {
+  font-family: var(--ff-primary);
+  color: var(--clr-link-secondary);
   float: left;
   display: block;
   text-align: center;
   text-decoration: none;
 
-  padding: 14px 5px;
-  margin-left: 2%;
+  /* border: 1px solid grey; */
+  border-left: 1px solid var(--clr-link-op);
+  border-right: 1px solid var(--clr-link-op);
+  padding: 0 .25em 0 .25em;
+  margin: 0.5em 0 0.5em 0;
+
+}
+
+/*---------- links Right ----------*/
+
+/* Links inside the navbar */
+.navbar .navlink-pos-right a{
+  font-family: var(--ff-primary);
+  color: var(--clr-link-secondary);
+  float: right;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+
+  border-left: 1px solid var(--clr-link-op);
+  /* border-right: 1px solid var(--clr-link-op); */
+  padding: 0 .25em 0 .25em;
+  margin: 0.5em 0 0.5em 0;
+}
+
+/* Links inside the navbar */
+.navbar .navlink-pos-right-single a{
+  font-family: var(--ff-primary);
+  color: var(--clr-link-secondary);
+  float: right;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+
+  border-left: 1px solid var(--clr-link-op);
+  border-right: 1px solid var(--clr-link-op);
+  padding: 0 .25em 0 .25em;
+  margin: 0.5em 0 0.5em 0;
 }
 
 /* Change background on mouse-over */
@@ -470,20 +507,6 @@ hr.rounded {
 }
 
 
-/*
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center
-}
-img {
-  max-width: 100%
-}
-.image {
-  flex-basis: 100%;
-  order: 2;
-  margin-left: 5%;
-} */
 
 /*------------------------------------------*/
 /*------- Set Main Margin and scales -------*/
@@ -493,7 +516,7 @@ img {
 }
 
 .margin-main {
-  margin: 10% 1% 0 1%;
+  margin: 10% 1% 10% 1%;
 }
 
 .margin-inner {
@@ -501,21 +524,23 @@ img {
 }
 
 @media (min-width: 900px) {
+
   /* main Margin */
   .margin-main {
-    margin: 5% 8% 0 8%;
+    margin: 5% 8% 10% 8%;
   }
 
   /* main Margin */
   .margin-portfolio {
     margin: 5% 8% 0 8%;
   }
+
 }
 
 @media (min-width: 1200px) {
   /* main Margin */
   .margin-main {
-    margin: 5% 20% 0 20%;
+    margin: 5% 10% 10% 10%;
   }
 
   /* main Margin */
@@ -742,16 +767,6 @@ img {
 }
 
 
-
-
-/* .container {
-  display: flex;
-  align-items: center;
-  justify-content: center
-} */
-
-
-
 .image {
   flex-basis: 40%
 }
@@ -902,6 +917,7 @@ img {
 }
 
 
+
 /*------------------------------------------*/
 /*----------P5 Sketch Container-------------*/
 /*------------------------------------------*/
@@ -983,7 +999,7 @@ img {
 /* Rounded Link Box */
 .demo-link a{
   text-decoration: none;
-  color: white;
+  color: var(--clr-link-secondary);
 }
 
 /* Change background on mouse-over */
@@ -993,13 +1009,13 @@ img {
 
 .demo-link {
   margin: 6% auto 6% auto;
-  width: 30%;
+  width: 15%;
   text-align: center;
   font-size:var(--fs-p);
   font-family: var(--ff-secondary);
-  border: 1px solid white;
+  border: 1px solid var(--clr-link-secondary);
   border-radius: 10px;
-  padding: 0.5em;
+  padding: 0.25em;
 }
 
 .demo-play {
@@ -1018,7 +1034,7 @@ img {
   background: #111;
   color: var(--clr-accent);
   text-align: center;
-  padding: 1em ;
+  padding: 0.3em ;
   font-size: var(--fs-h3);
   z-index: 1000;
   border-top: 1px solid grey;

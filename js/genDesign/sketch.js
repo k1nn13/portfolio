@@ -44,6 +44,7 @@ var b = function(p1) {
 
   //---------------------------//
   p1.draw = function() {
+    p1.windowResized();
     p1.background(0);
 
     //Noise Detail

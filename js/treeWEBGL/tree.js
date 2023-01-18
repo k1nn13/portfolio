@@ -53,7 +53,7 @@ var a = function(p0) {
 
   //---------------------------//
   p0.draw = function() {
-
+    p0.windowResized();
     let spectrum = fft.analyze();
     var amp = mic.getLevel();
 
