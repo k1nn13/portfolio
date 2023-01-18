@@ -11,11 +11,13 @@
     position: fixed;
   	width: 100%;
   	height: 100%;
-    background-image: url(../img/backgroundIMG/WaterSceneLarge2.jpg);
+    background-image: url(../img/backgroundIMG/bgWaterScene4.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1000;
+      transform: scaleX(-1);
+      filter: blur(0px) brightness(1.7) contrast(1);
 }
 
 
@@ -31,7 +33,7 @@
     position: fixed;
   	width: 100%;
   	height: 100%;
-    background-image: url(../img/backgroundIMG/portfolioBg.jpg);
+    background-image: url(../img/backgroundIMG/bgWaterScene1.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -51,13 +53,13 @@
     position: absolute;
   	width: 100%;
   	height: 110%;
-    background-image: url(../img/backgroundIMG/waterStyle.jpg);
+    background-image: url(../img/backgroundIMG/bgStylisedWater.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    filter: brightness(4);
+    filter: brightness(.4);
     z-index: -1000;
-    transform: scaleY(-1);
+
 }
 
 
@@ -73,11 +75,11 @@
     position: fixed;
   	width: 100%;
   	height: 100%;
-    background-image: url(../img/backgroundIMG/HoneyEd.jpg);
+    background-image: url(../img/backgroundIMG/bgED.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
-    filter: blur(1px) brightness(1);
+    /* filter: blur(1px) brightness(1); */
     z-index: -1000;
 }
 
@@ -94,7 +96,7 @@
     position: fixed;
   	width: 100%;
   	height: 110%;
-    background-image: url(../img/backgroundIMG/metalWorn.jpg);
+    background-image: url(../img/backgroundIMG/bgMetalWorn.jpg);
 
     background-size: cover;
     background-position: center;
@@ -117,11 +119,11 @@
     position: fixed;
   	width: 100%;
   	height: 100%;
-    background-image: url(../img/backgroundIMG/rock.jpg);
+    background-image: url(../img/backgroundIMG/bgStylisedRock.jpg);
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
-    filter: brightness(1.5);
+    /* filter: brightness(1.5); */
     z-index: -1000;
 }
 
@@ -138,7 +140,7 @@
     position: fixed;
   	width: 100%;
   	height: 100%;
-    background-image: url(../img/backgroundIMG/machineMetal.jpg);
+    background-image: url(../img/backgroundIMG/bgMetal.jpg);
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
@@ -191,7 +193,7 @@ Used in:
     position: fixed;
   	width: 100%;
   	height: 100%;
-    background-image: url(../img/backgroundIMG/portfolioPlain.jpg);
+    background-image: url(../img/backgroundIMG/bgPlain.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -212,7 +214,7 @@ Used in:
     position: fixed;
   	width: 100%;
   	height: 100%;
-    background-image: url(../img/backgroundIMG/Terrain2.png);
+    background-image: url(../img/backgroundIMG/bgAR.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: repeat;
@@ -402,7 +404,7 @@ button :hover {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  border: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 
 /*---------- links left ----------*/
@@ -411,6 +413,7 @@ button :hover {
 .navbar .navlink-pos-left a {
   font-family: var(--ff-primary);
   color: var(--clr-link-secondary);
+    font-size: var(--fs-h3);
   float: left;
   display: block;
   text-align: center;
@@ -430,6 +433,7 @@ button :hover {
 .navbar .navlink-pos-right a{
   font-family: var(--ff-primary);
   color: var(--clr-link-secondary);
+    font-size: var(--fs-h3);
   float: right;
   display: block;
   text-align: center;
@@ -444,6 +448,7 @@ button :hover {
 /* Links inside the navbar */
 .navbar .navlink-pos-right-single a{
   font-family: var(--ff-primary);
+  font-size: var(--fs-h3);
   color: var(--clr-link-secondary);
   float: right;
   display: block;
