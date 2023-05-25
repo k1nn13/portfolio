@@ -223,6 +223,27 @@ Used in:
 }
 
 
+/*-------------VR Project--------------*/
+/*-------- Used in: vr ---------*/
+.portfolio-body-vr {
+  position: relative;
+}
+
+/* Main Image */
+.portfolio-body-vr::before {
+    content: "";
+    position: fixed;
+  	width: 100%;
+  	height: 100%;
+    background-image: url(../img/backgroundIMG/MonitorBG.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: repeat;
+    filter:brightness(0.8);
+    z-index: -1000;
+}
+
+
 
 /*------------------------------------------*/
 /*------------------------------------------*/
@@ -691,7 +712,7 @@ hr.rounded {
 
 .portfolio__item {
   overflow: hidden;
-  background: var(--clr-accent);
+  /* background: var(--clr-accent); */
   text-decoration: none;
 }
 
@@ -726,7 +747,7 @@ hr.rounded {
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img{
     transform: scale(1.5);
-    opacity: 0.75;
+    opacity: 1;
 }
 
 
