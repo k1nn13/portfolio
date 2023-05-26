@@ -243,6 +243,26 @@ Used in:
     z-index: -1000;
 }
 
+/*-------------icarus Project--------------*/
+.portfolio-body-icarus {
+  position: relative;
+}
+
+/* Main Image */
+.portfolio-body-icarus::before {
+    content: "";
+    position: fixed;
+  	width: 100%;
+  	height: 100%;
+    background-image: url(../img/icarus/terminalBG.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: repeat;
+    filter:brightness(0.8);
+    z-index: -1000;
+}
+
+
 
 
 /*------------------------------------------*/
