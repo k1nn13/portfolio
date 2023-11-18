@@ -16,8 +16,8 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1000;
-      transform: scaleX(-1);
-      filter: blur(0px) brightness(1.7) contrast(1);
+    transform: scaleX(-1);
+    filter: blur(0px) brightness(1.7) contrast(1);
 }
 
 
@@ -262,6 +262,44 @@ Used in:
     z-index: -1000;
 }
 
+/*-------------Cyber Drive Project--------------*/
+.portfolio-body-cyberDrive {
+  position: relative;
+}
+
+/* Main Image */
+.portfolio-body-cyberDrive::before {
+    content: "";
+    position: fixed;
+  	width: 100%;
+  	height: 100%;
+    background-image: url(../img/CyberDrive/Spinner-11.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: repeat;
+    filter:brightness(0.8);
+    z-index: -1000;
+}
+
+/*-------------Cyber Drive Project--------------*/
+.portfolio-body-poseAI {
+  position: relative;
+}
+
+/* Main Image */
+.portfolio-body-poseAI::before {
+    content: "";
+    position: fixed;
+  	width: 100%;
+  	height: 100%;
+    background-image: url(../img/PoseAI/rain.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: repeat;
+    filter:brightness(0.8);
+    z-index: -1000;
+}
+
 
 
 
@@ -281,9 +319,11 @@ Used in:
   --ff-secondary: 'Source Code Pro', monospace;
 
   --fw-reg: 300;
+  --fw-med: 400;
   --fw-bold: 600;
 
   --clr-light: rgba(233, 233, 233, 0.7);
+  --clr-light-op: rgba(233, 233, 233, 0.5);
   --clr-dark: #303030;
   --clr-accent: rgba(228, 228, 228, 0.8);
   --clr-link: rgba(175, 228, 175, 0.8);
@@ -294,11 +334,13 @@ Used in:
   --fs-h1: 2rem;
   --fs-h2: 1.25rem;
   --fs-h3: 0.9rem;
+  --fs-h4: 1.5rem;
   --fs-p: 0.9rem;
 
   --lh-h1: 2.2rem;
   --lh-h2: 1rem;
   --lh-h3: 1.4rem;
+  --lh-h4: 2.4rem;
   --lh-p: 1.5rem;
 
   --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
@@ -654,18 +696,58 @@ hr.rounded {
 /* Subtitle Text Style */
 .subtitle-style {
   font-family: var(--ff-secondary);
-  font-size: var(--fs-h3);
+  font-size: var(--fs-h2);
   font-weight: var(--fw-reg);
-  color: var(--clr-accent);
-  line-height:  var(--lh-h3);
+  color: var(--clr-black);
+  line-height:  var(--lh-h4);
+}
+
+/* Subtitle Text Style */
+.subtitle-shape-right {
+  border-radius: 6px;
+  border-width: thin;
+  border-style: solid;
+
+  $border: 1px;
+  color: var(--clr-light-op);
+  background-image: linear-gradient(to left, rgba(200,0,0,0.8), rgba(255,0,0,0));
+  background-clip: padding-box; /* !importanté */
+  border: solid $border transparent; /* !importanté */
+
 }
 
 .subtitle-shape {
-  background: rgba(255, 255, 255, 0);
   border-radius: 6px;
   border-width: thin;
-  border-color: rgba(255, 255, 255, 0.2);
   border-style: solid;
+
+  $border: 1px;
+  color: var(--clr-light-op);
+  background-image: linear-gradient(to right, rgba(200,0,0,0.8), rgba(255,0,0,0));
+  background-clip: padding-box; /* !importanté */
+  border: solid $border transparent; /* !importanté */
+
+}
+
+.subtitle-section-div {
+  height: 60px;
+  /* border: 2px black solid; */
+}
+
+.subtitle-section-div-end {
+  height: 100px;
+  /* border: 2px black solid; */
+}
+
+@media (min-width: 700px) {
+  /* Subtitle Text Style */
+  .subtitle-style {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-h4);
+    font-weight: var(--fw-reg);
+    /* color: var(--clr-black); */
+    line-height:  var(--lh-h4);
+  }
 }
 
 /*------------------------------------------*/
